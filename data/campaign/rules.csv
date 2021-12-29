@@ -1557,7 +1557,6 @@ EndConversation","You cut the comm link after exchanging a few hollow pleasantri
 "ome_hireNoSel2","DialogOptionSelected","$option == ome_convEnd2","ShowDefaultVisual
 EndConversation","You look around the bridge. The junior officers are all remarkably busy, with no-one even glancing in your direction.",,
 ,,,,,,
-"# patrol stopping player w/ transponder off",,,,,,
 "tOffPatrolBegin","BeginFleetEncounter","CaresAboutTransponder
 !$tOff_didAlready
 !$isHostile
@@ -5103,8 +5102,7 @@ $global.gaFC_scavengerDroppedProbe = true","""I've ordered my quartermaster to e
 
 The comms are abruptly disconnected.","cutCommLinkNoText:Continue",
 ,,,,,,
-"# interact with stolen probe
-# will drop dialog into appropriate wrap-up",,,,,,
+"# will drop dialog into appropriate wrap-up""",,,,,,
 "gaFCStolenProbePodStart","OpenInteractionDialog","$tag:gaFC_lootedProbe","ShowDefaultVisual
 FireBest GAFCStolenProbePodStartOption","A salvage team quickly secures the target in your hold for your technology team to investigate.",,
 "gaFCStolenProbePodStartOption1","GAFCStolenProbePodStartOption","$global.gaFC_probesDone == 0",,"Tech works quickly, and reports that they've established a connection with the probe instrument chassis.","gaFC_probe1Investigation1:Continue",
@@ -9778,7 +9776,7 @@ gaDA_kanta2:""I could tell her I killed you. Change your name. Change your face.
 "gaDAKantaSentMe2a","DialogOptionSelected","$option == gaDA_kanta2a","$gaDA_piratePrice = 0 0","""Wonderful!"" $HeOrShe looks as though an enormous weight has lifted off $hisOrHer shoulders. ""Thank you for ... for this opportunity. Freedom! At last!""
 
 Only the promise that you'll make up a good story about how they went out guns ablaze gets the pirate captain off the comms. You sigh, and just then your operations chief pings your attention to note that a cargo drone has delivered a package from the lead pirate ship.","gaDA_buyAgree:Continue",
-"# conversation with scavenger",,,,,,
+,,,,,,
 "gaDAScavFleetEncounter","BeginFleetEncounter","$gaDA_scavenger score:1000
 !$gaDA_encounteredAlready
 Call $global.gaDA_ref updateData","$gaDA_encounteredAlready = true
@@ -10028,7 +10026,6 @@ Call $global.gaProbe_ref showMap ""Target: $gaProbe_systemName""","""So."" You g
 
 ""Plus,"" he says, calming down now, ""the bursar has authorized payment of $gaProbe_reward credits.""","aseb_accept:Accept
 aseb_decline:Decline",
-"# interactions with probe",,,,,,
 "gaProbePrintHostilesText","OpenInteractionDialog","$gaProbe_probe score:1000
 HostileFleetNearbyAndAware","ShowDefaultVisual","A nearby hostile fleet is tracking your movements, preventing you from sending an EVA team to examine the probe.","defaultLeave:Leave",
 "gaProbeObjectInteraction","OpenInteractionDialog","$gaProbe_probe score:1000
@@ -10093,7 +10090,6 @@ Theories are proposed. Black hole. Aliens; this prompts a round of polite laught
 Call $global.gaProbe_ref updateStage
 DespawnEntity","Whatever did this, it means you don't have an instrument package to return to the Galatia Academy. You order all telemetry and holo-feed from the encounter attached to the encrypted mission file. The academicians love data, the more the better. This should be enough to demonstrate that you did your job to the letter. Maybe the mystery at the heart of it will distract them long enough for you to get paid.","defaultLeave:Leave",
 ,,,,,,
-"# returned to Sebestyen",,,,,,
 "gaProbeMissionReturn","PickGreeting","$gaProbe_returnHere score:1000
 Call $global.gaProbe_ref updateData
 $gaProbe_variation != IT_BLEW_UP
@@ -10190,7 +10186,7 @@ MakeOtherFleetAggressive true
 $entity.gaProbe_finishedEncounter = true
 Call $entity.gaProbe_ref makeUnimportant","You cut the transmission and order the bridge crew to power up combat systems. Your tactical officer reports the Pather ships are accelerating to attack speed - choosing a death in battle over slowly expiring in the void.","cutCommLinkNoText:Continue",
 ,,,,,,
-"# conversation with scavenger",,,,,,
+,,,,,,
 "gaProbeScavengerDefeated","gaProbeScavengerDefeated","$someShipsDestroyed
 !$global.gaProbe_canReturn","$global.gaProbe_canReturn = true
 DespawnEntity gaProbe_probe
@@ -10683,7 +10679,6 @@ You personally oversee the transfer of the shielded cargo container carrying wha
 The lead researcher is thankful for rescue, but refuses to explain why an AI core was active in their base. Repeated statements of ""I take full responsibility."" is all you get.
 
 There is nothing to do here but return the whole lot to the Galatia Academy.",,
-"# returned to Sebestyen",,,,,,
 "gaOpMissionReturnDestroyed","PickGreeting","$gaOp_returnHere score:1000
 Call $global.gaOp_ref updateData
 $gaOp_destroyed
@@ -11376,7 +11371,6 @@ You react without surprise to this development, thanking the officer for the inp
 ""Um, yes, Captain,"" they say uncertainly, ""$PlayerSirOrMadam. I'll return to my station and await your orders.""
 
 You upload a copy of the datachip's contents to your personal TriPad. Just in case.","defaultLeave:Leave",
-"# return to Sebestyen",,,,,,
 "gaTJMissionReturn","PickGreeting","$gaTJ_needToReturn score:1000
 Call $global.gaTJ_ref updateData
 FireBest ASEBMissionReturn","ShowPersonVisual","""Captain! Thank you for returning- "" Sebestyen freezes, then lowers his voice, ""-for returning the ah, researcher. Provost Baird will be very pleased. She's restarting the hyperspace- um, well, I shouldn't ruin it. I'm sure there'll be a proper announcement when they're all ready.""","gaTJ_finish:Continue",
@@ -13130,7 +13124,6 @@ With a few taps at $hisOrHer console you receive an incoming data stream, ""Inte
 
 You quickly review the intel and estimate that you'd need around $extr_marines marines to carry off this operation.","contact_accept:Accept
 contact_decline:Decline",
-"# interaction with target market",,,,,,
 "extrOpenMarket1","OpenInteractionDialog","$market.extr_target score:1000
 Call $market.extr_ref updateData
 $extr_variation == COLONY
@@ -13220,7 +13213,6 @@ The automedic on the shuttle back reports that the agent was heavily and expertl
 Returned to consciousness in secure quarters on your flagship, the agent is suspicious and uncooperative until you give the confirmation phrase you were provided. Calmer now, they have no explanation for how they ended up in Eduardo's.
 
 Maybe it doesn't matter; you just have to get them back, get your pay, and the job is done.",,
-"# returned with target",,,,,,
 "extrMissionReturn1","PickGreeting","$extr_returnHere score:1000
 Call $extr_ref updateData
 $extr_variation == COLONY
@@ -13478,7 +13470,6 @@ Call $dhi_ref showMap ""Target: $dhi_marketName""","$HeOrShe pulls up a shared d
 
 You examine the intel report and estimate that roughly $dhi_marines marines would be required to carry off this operation. The $faction $rank watches you make your calculation, patiently awaiting your response.","contact_accept:Accept
 contact_decline:Decline",
-"# disruption raid finished",,,,,,
 "DHIRaidFinished","DialogOptionSelected","$market.dhi_raidedTargetIndustry score:1000
 $option == mktRaidResult","unset $market.dhi_raidedTargetIndustry
 $market.dhi_completed = true 0
@@ -13519,7 +13510,6 @@ Call $dsp_ref showMap ""Target: $dsp_marketName""","""Like I said,"" $heOrShe sa
 
 ""So you can make an informed decision, here's tac-intel."" $HeOrShe taps $hisOrHer datapad and soon you have a very competent recon overview on $dsp_marketName. You estimate that you'd need around $dsp_marines marines to carry off this raid.","contact_accept:Accept
 contact_decline:Decline",
-"# disruption raid finished",,,,,,
 "dspRaidFinished","DialogOptionSelected","$market.dsp_raidedTargetIndustry score:1000
 $option == mktRaidResult
 Call $market.dsp_ref updateData","unset $market.dsp_raidedTargetIndustry
@@ -13549,14 +13539,12 @@ $HeOrShe taps $hisOrHer datapad and a shared intel briefing appears in your disp
 
 $rank $personLastName swipes away the last of the tactical breakdowns and looks to you, ""So, what do you say?""","contact_accept:Accept
 contact_decline:Decline",
-"# disruption raid finished",,,,,,
 "taboBombardmentFinished","DialogOptionSelected","$market.tabo_bombardedColony score:1000
 $option == mktBombardResult","unset $market.tabo_bombardedColony 
 $market.tabo_completed = true 0
 Call $market.tabo_ref updateStage","$name fills your bridge tactical display, a spatter of hollow icons representing dead targets. The last one blinks out, and with that your mission parameters are fulfilled.
 
 With a simple wave of your hand the tactical display collapses and winks out. The holomatrix snows and reforms a navigational overview, your $shipOrFleet holding station in the very center.","mktBombardResult:Continue",
-"# Patrol encounter at some point afterwards",,,,,,
 "TABOPatrolHail1","TABOPatrolHail",,"$entity.ignorePlayerCommRequests = true","""Your bombardment of $entity.tabo_marketName will not go unanswered,"" the $rank says boldly. ""Now prepare yourself for battle!""","cutCommLink2:""Understandable, if inconvenient.""
 cutCommLink:Say nothing",
 "TABOPatrolHailLuddic","TABOPatrolHail","$faction.id == luddic_church","$entity.ignorePlayerCommRequests = true","""You will be judged in the next life for unleashing such destruction on $entity.tabo_marketName,"" the $rank says, hands clasped together in furious piety. ""Now may Providence guide my hand as I bring you justice in this life!""","cutCommLink2:""Understandable, if inconvenient.""
@@ -13590,7 +13578,6 @@ contact_decline:Decline",
 "secoPostAccept","ContactPostAccept","$missionId == seco","RemoveCommodity credits $seco_price
 Call $seco_ref repSuccess
 Call $seco_ref addContacts",,,
-"# Patrol encounter at some point afterwards",,,,,,
 "SECOPatrolHail","SECOPatrolHail",,"$entity.ignorePlayerCommRequests = true","""We don't know how you got our codes,"" the $theFactionLong $personRank says, seething, ""But I find such subterfuge a personal affront to my honor as a warrior. My orders are simply to hunt you down and destroy you, but know that I consider this a duel between an officer and a unscrupulous coward.""
 
 ""Prepare your $shipOrFleet for combat, captain,"" $heOrShe spits. ""Let us see how you do in a fair fight.""","cutCommLinkNoText2:Mutter something about operational infosec
@@ -13662,7 +13649,6 @@ Call $jabr_ref showMap ""Target: $jabr_marketName""","""I would like you to simp
 
 ""I suspect that they expect a break attempt, so I acquired this."" $HeOrShe taps at a TriPad and your corresponding system receives detailed reports on the ground defenses and troop deployments of $jabr_marketName. After a quick review, you estimate that you'd need around $jabr_marines marines to carry off this operation.","contact_accept:Accept
 contact_decline:Decline",
-"# interaction with target market",,,,,,
 "jabrOpenMarket1","OpenInteractionDialog","$market.jabr_target score:1000
 Call $market.jabr_ref updateData
 !$jabr_addedRaidObjective","AddRaidObjective genericIcon ""Conduct jailbreak operation"" $jabr_danger 3000 JABRRaidFinished
@@ -13694,7 +13680,6 @@ You exchange cryptokeys to facilitate secure comms, and coordinate a pick-up poi
 
 You move quickly to leave before the civic observation net flags your identities.","jabr_continue1:Continue",
 "jabr_barReturnToBar","DialogOptionSelected","$option == jabr_backToBar","BarCMD returnFromEvent false",,,
-"# returned with target",,,,,,
 "jabrMissionReturn1","PickGreeting","$jabr_returnHere score:1000
 Call $jabr_ref updateData
 FireBest GenericMissionReturn","ShowPersonVisual
@@ -14293,6 +14278,6 @@ andradaOffice_book1:""I'll be sure to study it. Constantly.""",
 "andradaOfficeBook2","DialogOptionSelected","$option == andradaOffice_book2","FireAll AndradaOfficeReplies","""It is you who will thank me, in time,"" $heOrShe says without irony.",,
 "andradaOfficeServe2gotBook","DialogOptionSelected","$option == andradaOffice_serve2
 $player.gotAndradaBook","$askedServeAndrada = true 1
-FireAll AndradaOfficeReplies","""Serve the interests of the Sindrian Diktat,"" $heOrShe says without hesitation. 
+FireAll AndradaOfficeReplies","""Serve the interests of the Sindrian Diktat"" $heOrShe says without hesitation. 
 
 ""You may find yourself, through submission to the Glorious Vision of our Movement, in a position to serve the Sindrian Diktat. Speak with an administrator and they may assist you in taking on a commission.""",,

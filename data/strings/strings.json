@@ -1,0 +1,357 @@
+{
+
+	"fleetInteractionDialog":{
+		# Available tokens:
+		#
+		# $faction  faction of other fleet ("Hegemony", "Tri-Tachyon", "Pirate", etc)
+		# $fleetName name of other fleet ("Scout", "Security Detachment", etc)
+		# $firstName first name of other fleet's commander
+		# $lastName last name of other fleet's commander
+		# $fleetOrShip "fleet", "ship" if only one ship in fleet, "fighter wing" if only one fighter wing (and nothing else)
+		# $repairedShipList list of names of the ships that were successfully repaired after being disabled
+		# $crewLost Approximate number of crew lost during the last engagement, i.e. "4", "around 100", or "no". 
+		# $marinesLost Approximate number of marines lost during the last engagement, i.e. "4", "around 100", or "no". 
+		# $crewRecovered Number of crew recovered after winning the entire encounter. 
+		# $marinesRecovered Number of marines recovered after winning the entire encounter.
+		# $numLifeSigns Approximate number of crew + marines on ship about to be boarded. Can also be "no".
+		# $boardingTaskForceShips List of names of the ships in the boarding task force.
+		# $boardingCrewLost
+		# $boardingEnemyCrewLost
+		# $boardingMarinesLost
+		# $boardingEnemyMarinesLost
+		# $boardableShipName "ISS Something or Other"
+		# $boardingTaskForceShipName "ISS Something or Other", name of the first ship in the boarding task force
+		# $creditsLooted
+		# $flagship On flagship selection
+		# $crashMothballList
+		# battles with allies
+		# Tokens:
+		# $alliedFactionAndTheirAllies "Hegemony forces and their allies"
+		# $enemyFactionAndTheirAllies "Hegemony forces and their allies"
+		# $yourForcesWereOrYourSideWas	 
+	
+		"initialAggressive":"Le $faction $fleetOrShip manœuvre pour éviter que vous puissiez vous désengager facilement.",
+		"initialDisengage":"$faction $fleetOrShip essaie de se désengager.",
+		"initialCareful":"$faction $fleetOrShip maintient soigneusement ses distances, prêt à se désengager en cas d'hostilité.",
+		"initialNeutral":"$faction $fleetOrShip adopte une posture neutre.",
+		"initialHoldVsStrongerEnemy":"$faction $fleetOrShip semble prêt à se battre malgré que vos forces soient supérieures, mais ils ne sont pas pressé d’en voir l’issue.",
+		"initialAggressiveSide":"$enemyFactionAndTheirAllies manœuvre pour éviter que vous puissiez vous désengager facilement.",
+		"initialDisengageSide":"$enemyFactionAndTheirAllies essaie de se désengager.",
+		"initialCarefulSide":"$enemyFactionAndTheirAllies maintient soigneusement ses distances, prêt à se désengager en cas d'hostilité.",
+		"initialNeutralSide":"$enemyFactionAndTheirAllies adopte une posture neutre.",
+		"initialHoldVsStrongerEnemySide":"$enemyFactionAndTheirAllies semble prêt à se battre malgré que vos forces soit supérieures, mais n'est pas pressé d’en voir l’issue.",
+	
+		"initialKnows":"Ils sont au courant de votre identité car le transpondeur de votre $playerFleetOrShip's est activé.",
+		"initialKnowsTOff":"Tout nous indique qu’ils connaissent votre identité, bien que le transpondeur de votre $playerFleetOrShip's soit éteint, probablement en raison de votre présence récemment.",
+		"initialDoesntKnow":"Ils ne semblent pas être certain de votre identité. Toutes hostilités auront un impact réduit sur votre réputation.",
+		"initialKnowsSide":"Ils sont au courant de votre identité car le transpondeur de $playerFleetOrShip's est activé.",
+		"initialKnowsTOffSide":"Tout nous indique qu’ils connaissent votre identité, bien que le transpondeur de votre $playerFleetOrShip's soit éteint, probablement en raison de votre présence récemment.",
+		"initialDoesntKnowSide":"Ils ne semblent pas être certain de votre identité. Toutes hostilités auront un impact réduit sur votre réputation.",
+		
+		"battleDefeat":"$yourForcesWereOrYourSideWas à été vaincu lors du dernier engagement",
+		"battleTotalDefeat":"$yourForcesWereOrYourSideWas à été complétement vaincu lors du dernier engagement",
+		"battleVictory":"$yourForcesWereOrYourSideWas à été vainqueur lors du dernier engagement",
+		"battleTotalVictory":"$yourForcesWereOrYourSideWas à obtenu une victoire totale lors du dernier engagement.",
+		"battleFleetLost":"Tous vos vaisseaux ont été détruits lors du dernier engagement.",
+		
+		"friendlyFireRepLoss":"Il y a eu d'importants incidents de tirs alliés au cours de la rencontre.",
+		
+		"pursuitAutoresolve":"Vos forces engagent dans la poursuite, comme ordonné.",
+		"pursuitVictoryNoLosses":"Les forces ennemies en fuite ont pu se désengager sans perdre de vaisseaux.",
+		"pursuitVictoryLosses":"Les forces ennemies en fuite ont pu se désengager, mais pas sans subir de pertes.",
+		"pursuitTotalVictory":"Aucun vaisseau ennemi n'a réussi à s'échapper.",
+		"pursuitDefeat":"Les forces ennemies ont pu retourner la situation et vous infliger une défaite.",
+		"pursuitTotalDefeat":"Grace à un retournement de situation surprenant, les forces ennemies en fuite ont pu inverser les rôles et obtenir une victoire écrasante.",
+		
+		"escapeDefeat":"$yourForcesWereOrYourSideWas s'est désengager de l'ennemi",
+		"escapeTotalDefeat":"Aucun des vaisseaux de votre côté n'a réussi à s'échapper.",
+		"escapeVictory":"$yourForcesWereOrYourSideWas ont pu retourner la situation et de leur infliger une défaite.",
+		"escapeTotalVictory":"$yourForcesWereOrYourSideWas ont pu retourner la situation pour écraser totalement l'ennemi.",
+		
+		"engagementMutualDestruction":"Les vaisseaux des deux camps ont été réduits à des tas de ferraille.",
+		"mutualDestructionRepairs":"Mais, tout n'est pas perdu. Vous prenez commandement de $boardableShipName, vous organisez des équipes de réparation et vous concentrez sur la récupération de la propulsion et du système de survie. Vos efforts sont couronnés de succès, et plusieurs heures plus tard, vous pouvez repartir.",
+		
+		"enemyHarass":"Les forces ennemies vous harcèlent dans votre fuite, vous désorganisant, mais finissent par abandonner.",
+		"enemyUnableToPursue":"Les vaisseaux ennemis sont incapables de vous poursuivre, ce qui permet à vos forces de se retirer sans autres incidents.",
+		"enemyDecidesNotToPursue":"Les vaisseaux ennemis ne font aucunes manouvres pour vous poursuivre, permettant à vos forces de se retirer sans autre incident.",
+		"enemyPursuit":"La flotte ennemie poursuit vos forces.",
+		
+		"playerRecovery":"$yourForcesWereOrYourSideWas ont été capable de récupérer du combat readiness en controlant le champ de bataille et en ayant un engagement limité.",
+		"enemyRecovery":"Les forces ennemies ont été  capable de récupérer du combat readiness en controlant le champ de bataille et en ayant un engagement limité.",
+		"bothRecovery":"Les deux côtés récupérerent du combat readiness en se retirant après un engagement limité et chaotique.",
+		
+		"enemyCleanDisengage":"Les vaisseaux adverses peuvent se désengager proprement car vos forces ne sont pas en mesure de les poursuivre.",
+		"enemyCleanDisengageSide":"Les vaisseaux adverses peuvent se désengager proprement car vos forces ne sont pas en mesure de les poursuivre.",
+		
+		# in playerUnableToPursue, the player can still harass the escaping ships, so it's not a "clean" disengagement.
+		"playerUnableToPursue":"Il semble que la flotte adverse puisse se désengager sans que vous puissiez la forcer à combattre.",
+		"playerUnableToPursueNoReadyShips":"Aucun de vos vaisseaux n'est en état pour effectuer une poursuite.",
+		"playerUnableToPursueStoodDown":"Vos vaisseaux sont focalisés sur la récupération du combat readiness et sont incapables d’effectuer une poursuite.",
+		"playerTooLargeToDisengage":"Votre flotte est trop grande pour pouvoir vraiment se désengager, à moins que les forces adverses ne soient déjà désorganisées.",
+		
+		"playerLetGo":"Votre force ne fait aucun mouvemnt pour le poursuivre, permettant à l'ennemi de se retirer sans autre incident.",
+		"playerHarass":"Vos forces harcèlent l'ennemi dans sa fuite, le désorganisant, mais finissent par abandonner.",
+		
+		"cleanDisengageOpportunity":"Après une victoire stratégique, vos forces ont l'opportunité de se désengager proprement de l'ennemi.",
+		
+		"engagePursuit":"La flotte adverse tente de se désengager, mais ils ne pourront pas fuir sans combattre.",
+		"engageMutual":"La flotte adverse se déplace pour se joindre à la bataille.",
+		"pursue":"Vos forces poursuivent l'ennemi et parviennent à se rapprocher suffisamment pour forcer l’affrontement.",
+		
+		"postBattleAggressive":"Le $fleetOrShip de $faction manouvre pour un autre engagement.",
+		"postBattleDisengage":"Le $fleetOrShip de $faction manouvre pour se désengager.",
+		"postBattleNeutral":"Le $fleetOrShip de $faction adopte une posture neutre.",
+		"postBattleHoldVsStrongerEnemy":"Le $fleetOrShip de $faction semble prêt(e) à se battre malgré que les forces adverse soit supérieures, mais n'est pas pressé d’en voir l’issue.",
+		
+		"postBattleAggressiveSide":"The $enemyFactionAndTheirAllies manouvre pour un autre engagement.",
+		"postBattleDisengageSide":"The $enemyFactionAndTheirAllies manouvre pour se désengager.",
+		"postBattleNeutralSide":"The $enemyFactionAndTheirAllies adopte une posture neutre.",
+		"postBattleHoldVsStrongerEnemySide":"The $enemyFactionAndTheirAllies semble prêt(es) à se battre malgré que les forces adverse soit supérieures, mais n'est pas pressé d’en voir l’issue.",
+		
+		"cutComm":"Vous coupez la communication et considérez vos options tactiques.",
+	
+		"repairReport":"Les équipes de réparation ont été capable restaurer les systèmes vitaux sur $repairedShipList.",
+		"casualtyReport":"Les rapports préliminaires indiquent que $crewLost  membre(s) d’équipage et $marinesLost marine(s) ont été perdu(s) durant le dernier engagement.",
+		"recoveryReport":"Après le bataille, $CrewRecovered membre d’équipage et $marinesRecovered  marines ont été secourus à partir de capsules de sauvetage intactes dans les épaves.",
+
+		#
+		# BOARDING ENEMY SHIP
+		#
+		"enemyShipBoardable":"Vos forces se préparaient à commencer les opérations de démantèlement, quand soudainement, les systèmes d'un vaisseau ennemi se sont rallumés. Un scan rapide indique $numLifeSigns signe(s) de vie à bord.",
+		"engageBoardableDisabled":"Vos forces engagent le vaisseau ennemi, et grâce à quelques coups bien placés, vous le neutralisez rapidement.",
+		"engageBoardableDestroyed":"Vos forces engagent le vaisseau ennemi. Le flash d’une explosion illumine l’ensemble des écrans d’observations quelques secondes après que des tirs aient touché la coque ennemi. Lorsque l’image revient il n’en reste plus qu’un champ de débris.",
+		"engageBoardableEscaped":"Vos forces engagent le vaisseau ennemi, mais son équipage rétablit au dernier moment le système de pilotage et s’apprête à repartir.",
+		"letBoardableGo":"Vos forces s'arrêtent et laissent échapper le vaisseau ennemi.",
+		"boardingTaskForceSelectedOneShip":"Comme ordonné , $boardingTaskForceShips se déplace pour approcher l'ennemi.",
+		"boardingTaskForceSelectedMultiple":"Comme ordonné , $boardingTaskForceShips se déplacent pour approcher l'ennemi.",
+		
+		"boardingApproachDock":"L’amarrage à la coque ennemie est fait,  les équipes d'assaut pirate les systèmes de sécurité des sas pressurisés et percent des points d’entrée dans les sections les plus faibles de la coque.",
+		"boardingApproachLaunch":"Les équipes d'assaut sont lancées à environ un kilomètre et s'approchent de la coque par vagues, elles utilisent des systèmes de propulsion personnels pour freiner l'approche finale. Les défenseurs ont la possibilité de tirer sur les forces d’assaut en toute impunité, jusqu'à ce que suffisamment d'équipes arrivent à pénétrer dans la coque.",
+		
+		"boardingOutcomeSelfDestruct":"Etant donné que vos équipes d'assaut commencent dominer la résistance à l'intérieur du vaisseau ennemi, l’adversaire déclenche l’autodestruction. La plupart des hommes et femmes à l’intérieur sont tuées par l'explosion.",
+		"boardingOutcomeShipLost":"Le $boardingTaskForceShipName est détruit.", 
+		"boardingOutcomeShipDamaged":"Le $boardingTaskForceShipName est sévèrement endommagé.",
+		"boardingOutcomeTaskForceLost":"L’ensemble de la force d’assaut amarrée à l’ennemi est détruite.", 
+		"boardingOutcomeTaskForceLostPartial":"Certains vaisseaux amarrés à l’ennemi ont été détruit, tandis que le reste est sévèrement endommagé.", 
+		"boardingOutcomeTaskForceDamaged":"Heureusement, aucun des vaisseaux de la force d'assaut n'ont été détruit.",
+		 
+		"boardingOutcomeSuccess":"Après avoir vaincu toute résistance et vérifié chaque compartiment, le commandant de la force d’assaut transmet que le vaisseau ennemi est sécurisé et prêt à accueillir un équipage.",
+		"boardingOutcomeTooDamaged":"Après avoir vaincu toute résistance et vérifié chaque compartiment, le commandant de la force d’assaut transmet que le vaisseau ennemi est sécurisé. Malheureusement, des dommages collatéraux des combats ont paralysé certains systèmes vitaux du vaisseau et son irréparable.",
+		"boardingOutcomeEscape":"Les forces ennemies retranchées ont été en mesure de retenir vos équipes d'assaut assez longtemps pour finir les réparations du moteur et s’enfuir.",
+		"boardingCleanEscapeMissedLaunch":"Au dernier moment, le vaisseau ennemi récupère sa propulsion et arrive à modifier sa trajectoire assez pour éviter la plupart des assaillants, et gagne suffisamment de temps pour s'enfuir. Après sauvetage, $boardingCrewLost membre(s) d’équipage et $boardingMarinesLost marine(s) restent disparus.",
+		
+		"boardingNoMarines":"Vous n'avez pas de marines disponibles pour effectuer un abordage. Un peu inutilement, un système automatisé indique qu’un abordage aurait 0% de chance de réussite.",
+		"boardingProjection":"Vous avez $marines marine(s) disponible(s). Selon des simulations exécutées par une IA de niveau gamma, une opération d’abordage aurait une chance de réussite de $boardingSuccessChance.",
+		
+		"boardingCasualtyReport":"Le bilan de l’action indique $boardingMarinesLost marine(s) perdu(s) pendant les combats.",  
+		
+		#
+		# BEING BOARDED (limited to ship being engaged and shot down or not, at the moment)
+		#
+		"friendlyShipBoardable":"L'équipage d'un de vos vaisseaux endommagé a effectué suffisamment de réparations pour que les systèmes critiques fonctionnent de nouveau. S’il est capable de récupérer sa propulsion, il pourrait rejoindre votre flotte.",
+		"engageFriendlyBoardableDisabled":"Malheureusement, les vaisseaux ennemis tirèrent quelques coups bien placés pour vous en empêcher.",
+		"engageFriendlyBoardableDestroyed":"Malheureusement, les vaisseaux ennemis tirèrent dessus avant que les réparations ne soient finies. Un tir perdu a du perforer la chambre de confinement du réacteur - le vaisseau explose, laissant derrière lui un champ de débris en s’éparpillant lentement.",
+		"engageFriendlyBoardableEscaped":"Avant que l'ennemi ne puisse se rapprocher, les réparations du moteur se sont terminées et le vaisseau a pu rejoindre votre flotte.",
+		"engageFriendlyBoardableLetGo":"Les forces de l'ennemi se retirent et laissent le vaisseau finir ses réparations et rejoindre votre flotte.",
+		
+		"lastFriendlyShipRepairs":"Vous prenez le commandement de $boardableShipName, vous organisé rapidement des équipes de réparation. S'il est possible de récupérer la propulsion, vous pourriez pouvoir partir.",
+		"lastFriendlyBoardableDisabled":"Malheureusement, les vaisseaux ennemis tirèrent quelques coups bien placés pour vous en empêcher.",
+		"lastFriendlyBoardableDestroyed":"Malheureusement, les vaisseaux ennemis tirèrent dessus avant que les réparations ne soient finies. Un tir perdu a du perforer la chambre de confinement du réacteur - le vaisseau explose, laissant derrière lui un champ de débris en s’éparpillant lentement.",
+		"lastFriendlyBoardableEscaped":"Avant que l'ennemi ne puisse se rapprocher, les réparations du moteur se sont terminées et vous avez pu vous enfuir!",
+		"lastFriendlyBoardableLetGo":"Les forces de l'ennemi se retirent et laissent votre vaisseau finir ses réparations et partir.",
+
+		"finalOutcomeNoShipsLeft":"La dernière chose dont vous vous souvenez, c'est l'accélération soudaine de la capsule de sauvetage, vous éloignant de votre vaisseau condamné.",
+		
+		#
+		# OTHER
+		#
+		"creditsLootedReport":"Les équipes de démantèlement ont été capables de récupérer $creditsLooted credit(s) à partir des CPU toujours actifs dans l'épave.",
+		"selectedFlagship":"Vous transférez le commandement à $flagship pour l'engagement à venir.",
+		"noSalvageReport":"Il n’y a rien à démanteler.",
+		"noSalvageReportPlayerDidNothing":"Votre $playerFleetOrShip ne participe pas aux opérations de démantèlement en raison de sa faible contribution durant l’affrontement.",
+		"salvageReportPlayer":"Votre $playerFleetOrShip participe aux opérations de démantèlement en raison durant l’affrontement.",
+		
+		#
+		# CRASH MOTHBALLING
+		#
+		"crashMothballSelectedOneShip":"Votre ordre $crashMothballList de couper tous les systèmes de combat pour éviter le risque de dysfonctionnement pendant la bataille. L'équipage du vaisseau dirige toutes les ressources disponibles aux moteurs pour qu’ils puissent fonctionner aussi bien que possible.",
+		"crashMothballSelectedMultiple":"Votre ordre $crashMothballList de couper tous les systèmes de combat pour éviter le risque de dysfonctionnement pendant la bataille. Les équipages des vaisseaux dirigent toutes les ressources disponibles aux moteurs pour qu’ils puissent fonctionner aussi bien que possible.",
+		"tooltipCrashMothball":"Certains de vos vaisseaux ont un faible combat rediness et pourraient subir des dysfonctionnements durant la bataille.\n\nLeurs systèmes de combat peuvent être éteints pour éviter les dysfonctionnements et permettre aux vaisseaux de faire de leur mieux pour s'échapper.",
+		"tooltipCrashMothballUnavailable":"Tous vos vaisseaux sont prêts au combat et ne courent pas le risque de dysfonctionnements.",
+		
+		#
+		# TOOLTIPS
+		#
+		"tooltipPursue":"Forcer l’engagement avec ceux qui tentent de s’enfuir.",
+		"tooltipPursueAutoresolve":"Ordonne à votre commandant en second de s’occuper de la poursuite. Ne présente aucun risque pour vos vaisseaux, mais est probablement moins efficace que si vous vous en occupiez-vous-même.",
+		"tooltipPursueLostLast":"Vos forces ont été vaincues lors du dernier engagement et sont incapables de poursuivre.",
+		"tooltipPursueStoodDown":"Vos forces ont diminué lors du dernier engagement et sont incapables de poursuivre.",
+		"tooltipPursueSeriousLosses":"Vos forces ont subi de sérieuses pertes lors du dernier engagement et sont incapables de poursuivre.",
+		"tooltipPursueTooSlow":"La flotte ennemie est trop rapide pour que vos forces puissent l’intercepter.",
+		
+		"tooltipNoReadyShips":"Aucun de vos vaisseaux n'est prêt au combat.",
+		"tooltipNoPersonnel":"Il n'y a pas de marines disponibles.",
+		
+		"tooltipHarassRetreat":"Réduit le combat readiness de tous les vaisseaux en fuite comme si ils avaient été déployés au combat.\n\nRéduit également la vitesse de votre flotte pendant un certain temps, car vos forces ont besoin de temps pour se réorganiser après cette action de harcèlement.",
+		"tooltipHarassRetreatUnavailable":"Impossible de harceler les forces en fuite car aucun de vos vaisseaux n’est prêt au combat",
+		
+		"tooltipLetThemGoNoPenalty":"Laisser l’autre flotte partir en paix.\n\nVotre flotte n'a pas eu besoin de se réorganiser après la rencontre et elle n’a pas était ralentie.",
+		"tooltipLetThemGo":"Laisser l’autre flotte partir en paix.\n\nVotre flotte n'a pas eu besoin de se réorganiser après la rencontre et elle n’a pas était ralentie.",
+		"tooltipEngage":"Attaquer la flotte adverse.",
+		"tooltipCleanDisengage":"Termine la bataille sans risque d'être poursuivis par la flotte adverse.\n\nEtant donné que l'ennemi contrôle le champ de bataille, vous ne pourrez pas effectuer des opérations de récupérations.\n\nSi votre flotte n'a pas prise de mesures hostiles, vous désengager - sans endommager les vaisseaux ennemis – aura un effet moins négatif sur votre réputation auprès de la faction adverse.",
+		"tooltipHarrassableDisengage":"Termine la bataille. La flotte adverse peut toujours tenter de vous rattraper.\n\nEtant donné que l'ennemi contrôle le champ de bataille, vous ne pourrez pas effectuer des opérations de récupérations.\n\nSi votre flotte n'a pas prise de mesures hostiles, vous désengager - sans endommager les vaisseaux ennemis – aura un effet moins négatif sur votre réputation auprès de la faction adverse.",
+		"tootipAttemptToDisengage":"Tenter de fuir le combat. La flotte adverse peut vous poursuivre et forcer un affrontement, ou peut vous laisser partir.\n\nEtant donné que l'ennemi contrôle le champ de bataille, vous ne pourrez pas effectuer des opérations de récupérations.\n\nSi votre flotte n'a pas prise de mesures hostiles, vous désengager - sans endommager les vaisseaux ennemis – aura un effet moins négatif sur votre réputation auprès de la faction adverse.",
+		
+		"tooltipBoardingAction":"Organiser un abordage. Nécessite des marines et risque d'entraîner de sérieuses pertes de personnel.",
+		"tooltipEngageBoardable":"Attaquez le vaisseau avant qu'il n’est pu finir ses réparations.\n\nIl est possible que le vaisseau soit complètement détruit.",
+		"tooltipLetShipGo":"Laissez le vaisseau ennemi terminer les réparations d'urgence et se retirer.",
+		"tooltipHardDockBoarding":"Les vaisseaux affectés à l’abordage s'approchent du vaisseau ennemi et s'amarre à lui.\n\nOffre les meilleures conditions de combat pour les équipes d'assaut et donc les meilleures chances de réussite.\n\nSi le vaisseau abordé, s'autodétruit, les vaisseaux utilisé pour l’abordage subiront d’importants dégâts et peuvent être détruits.",
+		"tooltipLaunchBoarding":"La force d’abordage se maintient à une distance de sécurité et envoie des équipes d'assaut équipées de systèmes de propulsion personnels.\n\nDonne aux défenseurs un avantage tactique important et une plus grande chance de s'enfuir, mais ne risque pas les l’intégrité des vaisseaux.",
+		"tooltipAboutBoardingAction":"Rappeler la force d’assaut et annuler l’abordage, permet au vaisseau ennemi de se retirer.", 
+		"tooltipSelectorMarines":"Sélectionnez le nombre de marines à affecter à la force d'abordage.",
+		"tooltipSelectorCrew":"Sélectionnez le nombre de membre d'équipage à affecter à la force d'abordage.",
+		"tooltipSelectFlagship":"Sélectionnez le vaisseau que vous contrôlerez manuellement lors de l'engagement à venir.",
+		
+		"ongoingBattleEncounter":"Vous tomber sur une bataille en cours.",
+		"ongoingBattleShareIFF":"La force de $alliedFactionAndTheirAllies transmettent leurs codes IFF, Transmettent leurs codes IFF, ce qui vous autorise de rejoindre la bataille de leur côté, si vous décidez de le faire.",
+		"ongoingBattleNoJoin":"Aucun des deux camps ne vous fait  suffisamment confiance pour partager leurs codes IFF et pour se battre à vos côtés, vous ne pouvez rejoindre la bataille dans aucun des deux camps.",
+		"ongoingBattleNoJoinTransponder":"Aucun des deux camps ne vous fait  suffisamment confiance pour partager leurs codes IFF, mais cela pourrais changer si vous revenez avec votre transpondeur allumé.",
+		"playerOutFirstEscapeWin":"Vos forces quittent le champ de bataille avant tous vos alliés, qui sont néanmoins en mesure de faire face aux forces ennemies.",
+		"playerOutFirstEscapeLoss":"Vos forces quittent le champ de bataille avant tous vos alliés, qui purent s’échapper peu de temps après.",
+		"playerOutFirstEngageWin":"Vos forces fuient de le champ de bataille avant vos alliés, qui sont néanmoins en mesure de gagner l'engagement.",
+		"playerOutFirstEngageLoss":"Vos forces fuient de le champ de bataille avant tous vos alliés et ont l'opportunité de partir dans une sécurité relative, malgré que vos alliés soient vaincus peu de temps après.",
+		"playerOutFirstPursuitWin":"Vos forces fuient de le champ de bataille avant vos alliés, qui ont été néanmoins en mesure de pourchasser les forces ennemies en fuite.",
+		"playerOutFirstPursuitLoss":"Vos forces fuient de le champ de bataille avant vos alliés, l’adversaire a été capable de retourner la situation et de les vaincre peu de temps après.",
+		"ongoingBattleEngage":"Les forces de $alliedFactionAndTheirAllies se déplacent pour engager la flotte de $enemyFactionAndTheirAllies.",
+		"ongoingBattlePursue":"Les forces de $alliedFactionAndTheirAllies poursuivent la flotte de $enemyFactionAndTheirAllies dans sa fuite.",
+		"ongoingBattleHarass":"Les forces de $alliedFactionAndTheirAllies harcèlent la flotte de $enemyFactionAndTheirAllies dans sa fuite, le désorganisant, mais finissent par abandonner.",
+		"ongoingBattleLetGo":"Les forces de $alliedFactionAndTheirAllies laissent la flotte de $enemyFactionAndTheirAllies partir sans autre incident.",
+		"ongoingBattleDisengage":"Les forces de $alliedFactionAndTheirAllies tentent de se désengager de la flotte de $enemyFactionAndTheirAllies.",
+		#"ongoingBattleJoinEnemyWillFlee":"Vos forces rejoignent la bataille, et la flotte de $enemyFactionAndTheirAllies maintenant surpassé  tente de fuir.",
+		#"ongoingBattleJoinAlliesWillFight":"Vos forces rejoignent la bataille, et encouragé par la tournure des événements, la force de $alliedFactionAndTheirAllies se déplace pour engager l’ennemi",
+		#"ongoingBattleJoinTurnTables":"Vos forces rejoignent la bataille, ce qui change radicalement l'équilibre du combat. La force de $alliedFactionAndTheirAllies se déplace pour engager la flotte de $enemyFactionAndTheirAllies qui en conséquence tente de fuir.",
+	},
+
+
+	"jumpPointInteractionDialog":{
+		# Available tokens:
+		#
+		# $fleetOrShip "fleet", "ship" if only one ship in fleet, "fighter wing" if only one fighter wing (and nothing else)
+		
+		"approach":"Votre $fleetOrShip approche d'un point de saut.",
+		"starAnchor":"Sauter dans un trou de ver formé par le champ de gravité d’une étoile, relève de l’exploit. Seul les plus qualifié peuvent le tenter et même dans ce cas, les résultats restent imprévisibles.",
+		"starAnchorUnusable":"Vous ne pouvez pas utiliser ce point de saut.",
+		"noFuel":"Votre $fleetOrShip n’a plus suffisamment de carburant et est incapable de faire un saut.",
+		"noExits":"Le point de saut ne semble pas avoir de sortie fonctionnelle et est donc inutilisable.",
+	},
+	
+	
+	"planetInteractionDialog":{
+		# Available tokens:
+		#
+		# $fleetOrShip "fleet", "ship" if only one ship in fleet, "fighter wing" if only one fighter wing (and nothing else)
+		# $planetName
+		"approach":"Votre $fleetOrShip approche de $planetName.",
+	},
+	
+
+	"campaignHelp":{
+		"chmNewgame_text":"Bienvenu dans la campagne de Starsector!\n\nVous pouvez appuyer sur F5 pour faire des sauvegardes rapides et F9 pour faire un chargement rapide.\n\nEssayez d'éviter d’affronter des flottes beaucoup plus grandes que la vôtre, ou celles qui ont des vaisseaux plus gros, et rappelez-vous qu'il s'agit d'un jeu toujours en développement, des bugs peuvent parfois se produire.\n\nBonne chance!",
+		"chmNewgame_dismiss":"Passer",
+		
+		"chmNewgameIron_text":"Bienvenu dans la campagne de Starsector!\n\nEtant donné que vous jouez en Iron mode, vous pourrez uniquement sauvegarder le jeu en le quittant.\n\nEssayez d'éviter d’affronter des flottes beaucoup plus grandes que la vôtre, ou celles qui ont des vaisseaux plus gros, et rappelez-vous qu'il s'agit d'un jeu toujours en développement, des bugs peuvent parfois se produire.\n\nBonne chance!",
+		"chmNewgameIron_dismiss":"Passer",
+		
+		"chmDeployCritCR_text":"Certains des vaisseaux sélectionnés pour le déploiement sont à un niveau de combat readiness dangereusement faible (inférieur à 20%).\n\nActiver les systèmes de combat sur ces vaisseaux est susceptible de provoquer des dysfonctionnements critiques - causer des dégâts, bloquer certaines armes et moteurs durant l’affrontement.\n\nRCourir ces risques - qui incluent la destruction totale d'un vaisseau - est habituellement une mesure de dernier recours.",
+		"chmDeployCritCR_action":"Lancer quand même",
+		"chmDeployCritCR_dismiss":"Reconsidérer",
+		
+		"chmDeployLowCR_text":"Certains des vaisseaux sélectionnés pour le déploiement sont à un niveau de combat readiness faible (inférieur à 40%).\n\nLeurs systèmes d’armement et leurs moteurs sont susceptibles de subir des dysfonctionnements et de devenir indisponibles lors d'une utilisation prolongée.",
+		"chmDeployLowCR_action":"Lancer quand même",
+		"chmDeployLowCR_dismiss":"Reconsidérer",
+		
+		"chmDeployCostsCR_text":"Vous pouvez sélectionner les vaisseaux à déployer au début de chaque bataille et ceux à déployer en renfort durant l’affrontement.\n\nDéployer un vaisseau réduit son combat readiness. De plus, les vaisseaux commenceront à perdre progressivement du combat readiness après avoir atteint la durée d’immunité de perte de détermination (peak).\n\nLa récupération du combat readiness pre du temps et consomme des supplies.",
+		"chmDeployCostsCR_dismiss":"Passer",
+		
+		"chmWeaponGroups_text":"Vous avez apporté des modifications à l'équipement du vaisseau, mais vous n'avez pas ajusté les groupes d'armes.\n\nLes armes seront automatiquement assignées à des groupes lorsque vous déploierez le vaisseau au combat, mais c'est une bonne idée de faire les affectations manuellement.",
+		"chmWeaponGroups_action":"Ajuster les groupes d'armes",
+		"chmWeaponGroups_dismiss":"Laisser tomber",
+		
+		"chmOpenTrade_text":"Sur l'écrant d'inventaire et de commerce, vous pouvez utiliser:\n\n- Clic gauche pour déplacer un stack\n- Maj+Clic pour retirer un item à la fois d'un stack\n- Maintenir Maj+Clic, puis glisser jusqu'à la quantité voulue\n- Ctrl+Clic pour transférer un stack d'un seul coup sans le déplacer",
+		"chmOpenTrade_dismiss":"Passer",
+	
+		"chmShipPurchase_text":"Félicitations, vous venez d'acheter un nouveau vaisseau!\n\nIl n'y a pas d'armes ou d'hullmods installés, donc ce serait une bonne idée de l'équiper.\n\nVous devrez également vous assurer que vous avez suffisamment de personnel pour le manoeuvrer.",
+		"chmShipPurchase_action":"Ouvrir l'écran de flotte",
+		"chmShipPurchase_dismiss":"Passer",
+		
+		"chmWingPurchase_text":"Félicitations, vous venez d'acheter une nouvelle escadrille de chasseurs!\n\nLe combat readiness des escadrilles représente le nombre de châssis de remplacement disponibles, mais ceux-ci ne peuvent être utilisés que si vous disposez d'un vaisseau équipé d'un pont d'envol (flight deck) dans votre flotte.\n\nLes nouveaux chasseurs décolleront d'un pont d'envol voisin pour remplacer toutes les pertes subies lors du combat. Tant que votre flotte a un vaisseau avec des installations de réparation appropriées (c.-à-d. un pont d'envol), une escadrille ne peut pas être complètement perdue, même son combat readiness est réduit à zéro.",
+		"chmWingPurchase_dismiss":"Passer",
+		
+		"chmRefitOnStation_text":"Lors du réaménagement d'un vaisseau qui est amarré dans une station spatiale, vous pouvez monter à la fois les armes dans votre cale et celles disponibles à l'achat dans la station.\n\nEn annulant les modifications apportées au vaisseau (ou simplement en démontant les armes achetées), vous rembourserez les crédits utilisés, mais uniquement si vous n’êtes pas sortis de l’écran ‘Reflit’.",
+		"chmRefitOnStation_dismiss":"Passer",
+		
+		"chmLootOverCapacity_text":"Attention: vous avez pris plus de ressource que ce que votre flotte peut transporter.\n\nCela entraînera une augmentation importante de la consommation de supplies et réduira votre vitesse de déplacement.\n\nIl est recommandé de prendre moins de ressources ou de se diriger vers une station voisine pour vendre l'excès.",
+		"chmLootOverCapacity_dismiss":"Passer",
+		
+		"chmOverCargoCapacity_text":"Votre flotte transporte plus de cargo que ce que votre flotte peut transporter.\n\nCela entraînera une augmentation importante de la consommation de supplies et réduira votre vitesse de déplacement.\n\nIl est recommandé de jeter une partie de la cargaison maintenant ou de vous diriger rapidement vers une station afin que vous puissiez vendre l'excédent. Vous pouvez jeter le fret à partir de l'écran de l'équipage/cargo. une station rapidement afin que vous puissiez vendre l'excédent. Vous pouvez jeter le fret à partir de l'écran de l'équipage / cargo.",
+		"chmOverCargoCapacity_action":"Ouvrir l'écran de l'équipage/cargo.",
+		"chmOverCargoCapacity_dismiss":"Passer",
+		
+		"chmOverFuelCapacity_text":"Votre flotte transporte plus de carburant que ce que votre flotte peut transporter.\n\nCela entraînera une augmentation importante de la consommation de supplies et réduira votre vitesse de déplacement.\n\nIl est recommandé de jeter une partie du carburant maintenant ou de vous diriger rapidement vers une station afin que vous puissiez vendre l'excédent. Vous pouvez jeter le carburant à partir de l'écran de l'équipage/cargo.",
+		"chmOverFuelCapacity_action":"Ouvrir l'écran de l'équipage/cargo.",
+		"chmOverFuelCapacity_dismiss":"Passer",
+		
+		"chmOverCrewCapacity_text":"Votre flotte transporte plus de personnel qu'elle n'en a la capacité.\n\nCela entraînera une augmentation importante de la consommation de supplies et réduira votre vitesse de déplacement.\n\nIl est recommandé de vous diriger vers un marché voisin afin que vous puissiez les déposer là-bas.",
+		"chmOverCrewCapacity_action":"Ouvrir l'écran de l'équipage/cargo.",
+		"chmOverCrewCapacity_dismiss":"Passer",
+		
+		"chmLowFuel_text":"Votre flotte a une faible quantité de carburant.\n\nSi elle finit par manquer de carburant dans l'hyperespace, elle se dirigera vers le système solaire le plus proche et peut se retrouver bloqué si vous ne pouvez pas y trouver plus de carburant.",
+		"chmLowFuel_dismiss":"Passer",
+		
+		"chmLowSupplies_text":"Votre flotte a une faible quantité de supplies.\n\nSi elle finit par manquer de supplies, toutes les réparations s'arrêteront et les vaisseaux commenceront à perdre du combat readiness au cours du temps. Après quelques jours sans approvisionnement, la flotte commence à court le risque d'accidents mineurs (comme la perte de certaines marchandises) ou critiques (perte d'un vaisseau).\n\nIl est recommandé d'acquérir plus de supplies le plus rapidement possibles. En dernier vous pouvez démanteler l'un de vos vaisseau pour récupérer des supplies. Cette action est disponible depuis l'écran de la flotte.",
+		"chmLowSupplies_action":"Ouvrir l'écran de flotte",
+		"chmLowSupplies_dismiss":"Passer",
+		
+		"chmNotEnoughCrew_text":"Votre flotte n'a pas suffisamment de personnel pour manoeuvrer tous vos vaisseaux.\n\nIl en résulte une réduction du combat readiness et de sa récupération pour tous les vaisseaux touchés.\n\nVous pouvez concentrer l'équipage disponible sur quelques vaisseaux en mettant en rade certains depuis l'écran de la flotte. Il est recommandé que vous engagiez plus d'équipage dans une station spatiale à proximité dès que possible.",
+		"chmNotEnoughCrew_action":"Ouvrir l'écran de flotte",
+		"chmNotEnoughCrew_dismiss":"Passer",
+		
+		"chmSomeLowCR_text":"Certains des vaisseaux de votre flotte ont un combat readiness faible (inférieure à 40%).\n\nLeurs systèmes d'arme et leurs moteurs risquent de subir des dysfonctionnements ou d’être désactivé en cas d'une utilisation prolongée, ce qui les rend moins efficaces au combat.\n\nIl est recommandé de laisser ces vaisseaux récupérer avant de les utiliser au combat. Les vaisseaux récupèrent combat readiness au fil du temps, les stations amicales offrent également un moyen rapide de le récupérer en fessant des réparations, ainsi qu’en embauchant de l’équipage supplémentaire si nécessaire.\n\nVous pouvez vérifier le niveau de combat readiness de vos vaisseaux dans l'écran de la flotte.",
+		"chmSomeLowCR_action":"Ouvrir l'écran de flotte",
+		"chmSomeLowCR_dismiss":"Passer",
+		
+		"chmSomeCritCR_text":"Certains des vaisseaux de votre flotte ont un combat readiness dangereusement faible (inférieure à 20%).\n\nLe déploiement de ces vaisseaux dans le combat risque de provoquer des dysfonctionnements critiques - causer des dégâts, désactiver certaines armes et moteurs pendant toute la durée de la bataille.\n\nIl est recommandé de laisser ces vaisseaux récupérer avant de les utiliser au combat. Les vaisseaux récupèrent combat readiness au fil du temps, les stations amicales offrent également un moyen rapide de le récupérer en fessant des réparations, ainsi qu’en embauchant de l’équipage supplémentaire si nécessaire.\n\nVous pouvez vérifier le niveau de combat readiness de vos vaisseaux dans l'écran de la flotte.",
+		"chmSomeCritCR_action":"Ouvrir l'écran de flotte",
+		"chmSomeCritCR_dismiss":"Passer",
+		
+		"chmAllCritCR_text":"Tous les vaisseaux de votre flotte ont un combat readiness dangereusement faible (inférieure à 20%).\n\nLe déploiement de ces vaisseaux dans le combat risque de provoquer des dysfonctionnements critiques - causer des dégâts, désactiver certaines armes et moteurs pendant toute la durée de la bataille.\n\nIl est recommandé de laisser ces vaisseaux récupérer avant de les utiliser au combat. Les vaisseaux récupèrent combat readiness au fil du temps, les stations amicales offrent également un moyen rapide de le récupérer en fessant des réparations, ainsi qu’en embauchant de l’équipage supplémentaire si nécessaire.\n\nVous pouvez vérifier le niveau de combat readiness de vos vaisseaux dans l'écran de la flotte.",
+		"chmAllCritCR_action":"Ouvrir l'écran de flotte",
+		"chmAllCritCR_dismiss":"Passer",
+		
+		"chmSupplyUseAfterBattle_text":"Votre consommation de supplies vient d’augmenter!\n\nLa récupération de combat readiness utilisé pour déployer des vaisseaux coute des supplies, tout comme la réparation des dégâts.\n\nPour réduire l'utilisation de supplies, les réparations et la récupération du combat readiness (CR) des vaisseaux peuvent être suspendus depuis l'écran de flotte.",
+		"chmSupplyUseAfterBattle_action":"Ouvrir l'écran de la flotte",
+		"chmSupplyUseAfterBattle_dismiss":"Passer",
+		
+		"chmRiskOfAccidents_text":"Certains des vaisseaux de votre flotte risquent de subir des accidents en raison de leur combat readiness de 0%.\n\nLes accidents peuvent endommager ou même détruire un vaisseau.\n\nIl est recommandé de mettre en rade ces vaisseaux ou de les laisser récupérer du combat readiness dès que possible.",
+		"chmRiskOfAccidents_dismiss":"Passer",
+		
+		"chmEnteredHyper_text":"Votre flotte est entrée dans l'hyperespace!\n\nSLes vaisseaux qui se déplaçant dans l’hyperespace utilisent du carburant proportionnellement à la distance parcourue. Les flottes qui manquent de carburant dérivent vers le système solaire le plus proche et peuvent être bloquées là-bas.",
+		"chmEnteredHyper_dismiss":"Passer",
+	
+		"chmRefitCRLoss_text":"Le réaménagement d'un vaisseau dans l'espace lui fera perdre un peu de combat readiness.\n\nLe montant perdu dépend de l'étendue des modifications apportées et est indiqué par la partie atténuée de la barre de combat readiness.\n\nLe réaménagement dans une installation ou une station ne réduit pas le combat readiness.",
+		"chmRefitCRLoss_dismiss":"Passer",
+	},
+	
+	
+	
+		
+}
+
+
+
+
+
+
+
+
+

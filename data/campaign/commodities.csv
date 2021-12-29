@@ -6,7 +6,7 @@ Marines,marines,marines,200,0,3,1,,"marines, military, personnel",1000,0,graphic
 ,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,
 Nourriture,food,food,20,1000,3,1,,food,1000,1,graphics/icons/cargo/food.png,ui_cargo_food,ui_cargo_food_drop,13,1,500,2000,,40000,1,,
-Organics,organics,organics,30,500,3,1,,,1000,1,graphics/icons/cargo/organics.png,ui_cargo_organics,ui_cargo_organics_drop,12,0,500,1500,,45000,1,,
+Matières organiques,organics,organics,30,500,3,1,,,1000,1,graphics/icons/cargo/organics.png,ui_cargo_organics,ui_cargo_organics_drop,12,0,500,1500,,45000,1,,
 Volatiles,volatiles,volatiles,250,5000,3,1,,expensive,1000,1,graphics/icons/cargo/volatilesB.png,ui_cargo_volatiles,ui_cargo_volatiles_drop,11,1.2,100,200,,50000,1,,
 Minerai,ore,ore,10,1500,3,1,,,1000,1,graphics/icons/cargo/ore.png,ui_cargo_ore,ui_cargo_ore_drop,10,0.2,500,5000,,50000,1,,
 Transplutonic Ore,rare_ore,rare_ore,75,2000,3,1,,expensive,1000,1,graphics/icons/cargo/rareore.png,ui_cargo_rareore,ui_cargo_rareore_drop,9,0.3,200,500,,37500,1,,

@@ -2,7 +2,7 @@
 "# default entity interaction",,,,,,
 "defaultOpenDialog","OpenInteractionDialog",,"ShowDefaultVisual
 PrintDescription 3
-SetShortcut defaultLeave ""ESCAPE""",,"defaultLeave:Leave",
+SetShortcut defaultLeave ""ESCAPE""",,"defaultLeave:Partir",
 "defaultLeave","DialogOptionSelected","$option == defaultLeave","DismissDialog",,,
 "# warning beacons",,,,,,
 "beaconOpenDialog","OpenInteractionDialog","$tag:warning_beacon","ShowDefaultVisual
@@ -221,9 +221,9 @@ FireAll PopulateOptions
 FireBest PrintNearbySurveyHostilesTextIfSo","Your $shipOrFleet approaches $entityName.
 
 $market is in chaos, with what's left of the population scrambling to survive by any means possible. Your sensors pick up some intermittent small-arms fire. The collapse of all authority is complete and irreversible, though a new colony can still be established atop the wreckage of the old.",,
-"surveyPrintFullData","PrintHasSurveyDataTextIfSo","$market.isSurveyed",,"You have full survey data for this planet.",,
+"surveyPrintFullData","PrintHasSurveyDataTextIfSo","$market.isSurveyed",,"Vous avez toutes les données d'analyse pour cette planète.",,
 "surveyAddOptionPerform","PopulateOptions","$market.isPlanetConditionMarketOnly
-!$market.isSurveyed",,,"0:surveyPerform:Perform a survey",
+!$market.isSurveyed",,,"0:surveyPerform:Lancer une analyse",
 "surveyPrintHostilesText","PrintNearbySurveyHostilesTextIfSo","$market.isPlanetConditionMarketOnly
 !$market.isSurveyed
 HostileFleetNearbyAndAware","SetEnabled surveyPerform false","A nearby hostile fleet is tracking your movements, making running a survey operation impossible.",,
@@ -235,7 +235,7 @@ $market.isSurveyed
 Establishing a colony here is not an option.",,
 "surveyAddOptionPerformedAlready","PopulateOptions","$market.isPlanetConditionMarketOnly
 $market.isSurveyed
-!$market.hasUnexploredRuins","FireBest PrintSystemCutOffText",,"0:surveyPerform:Establish a colony",
+!$market.hasUnexploredRuins","FireBest PrintSystemCutOffText",,"0:surveyPerform:Etablir une colonie",
 "surveyPrintHostilesTextEstColony","PrintNearbySurveyHostilesTextIfSo","$market.isPlanetConditionMarketOnly
 $market.isSurveyed
 !$market.hasUnexploredRuins
@@ -2711,7 +2711,7 @@ RACA_ignore:Leave the AI core in control and let things be
 PrintDescription 1
 FireAll Stable_AddBuildOptions",,"100:SL_Leave:Leave",
 "stable_buildRelayOpt","Stable_AddBuildOptions",,,,"10:SL_buildRelay:Construct a makeshift comm relay",
-"stable_buildArrayOpt","Stable_AddBuildOptions",,,,"20:SL_buildArray:Construct a makeshift sensor array",
+"stable_buildArrayOpt","Stable_AddBuildOptions",,,,"20:SL_buildArray:Construire un réseau de capteurs de fortune",
 "stable_buildBuoyOpt","Stable_AddBuildOptions",,,,"30:SL_buildBuoy:Construct a makeshift nav buoy",
 "stable_leaveOpt","Stable_AddBuildOptions",,"SetShortcut SL_Leave ""ESCAPE""",,"100:SL_Leave:Leave",
 "stable_leave","DialogOptionSelected","$option == SL_Leave","DismissDialog",,,
@@ -2740,21 +2740,21 @@ FireBest COB_DisableOptionsIfNeeded
 FireAll COB_DisableIndividualOptions",,,
 "cob_hackOpt","COB_AddOptions","$faction.id != player
 !$tag:comm_relay
-!$objectiveNonFunctional",,,"10:COB_hack:Hack",
+!$objectiveNonFunctional",,,"10:COB_hack:Hacker",
 "cob_resetOpt","COB_AddOptions","$faction.id != player
 $tag:sensor_array
-!$objectiveNonFunctional",,,"15:COB_reset:Introduce false readings into the data feed",
+!$objectiveNonFunctional",,,"15:COB_reset:Introduire de faux relevés dans le flux de données",
 "cob_snifferOpt","COB_AddOptions","$tag:comm_relay
 !$cob_hacked
-!$objectiveNonFunctional",,,"10:COB_hack:Install a comm sniffer",
+!$objectiveNonFunctional",,,"10:COB_hack:Installer un logiciel espion",
 "cob_snifferOptUninstall","COB_AddOptions","$tag:comm_relay
-$cob_hacked",,,"10:COB_unhack:Uninstall comm sniffer",
-"cob_sabOpt","COB_AddOptions","!$tag:story_critical",,,"30:COB_salvage:Break it for salvage",
+$cob_hacked",,,"10:COB_unhack:Désinstaller un logiciel espion",
+"cob_sabOpt","COB_AddOptions","!$tag:story_critical",,,"30:COB_salvage:Détruire pour récupérer des matériaux",
 "cob_controlOpt","COB_AddOptions","$faction.id != player
-!$objectiveNonFunctional",,,"20:COB_takeControl:Take control of the $shortName",
+!$objectiveNonFunctional",,,"20:COB_takeControl:Prendre possession de $shortName",
 "cob_controlOpt2","COB_AddOptions","$faction.id != player
 $objectiveNonFunctional",,,"20:COB_takeControl:Claim the $shortName and bring it online",
-"cob_leaveOpt","COB_AddOptions",,"SetShortcut COB_Leave ""ESCAPE""",,"100:COB_Leave:Leave",
+"cob_leaveOpt","COB_AddOptions",,"SetShortcut COB_Leave ""ESCAPE""",,"100:COB_Leave:Partir",
 "cob_alreadyHacked","COB_DisableIndividualOptions","$cob_hacked","SetEnabled COB_hack false",,,
 "cob_alreadyReset","COB_DisableIndividualOptions","$cob_reset","SetEnabled COB_reset false",,,
 "cob_disableOpts","COB_DisableOptionsIfNeeded","HostileFleetNearbyAndAware score:100","SetEnabled COB_hack false
@@ -2821,13 +2821,13 @@ $faction.id != player
 $faction.id != neutral
 !Objectives hasRepImpact",,"$TheFaction has no presence in this system, and taking control of this $shortName will have no impact on your standing.",,
 "cob_hackPrompt","COB_ConfirmPrompt","$cob_action == hack
-!$tag:comm_relay",,"Hacking $aOrAn $shortName will surreptitiously provide your fleets with the same benefits as the faction that currently controls it.
+!$tag:comm_relay",,"Le piratage d'un $shortName fournira brièvement à vos flottes les mêmes avantages que la faction qui le contrôle actuellement.
 
-The hack will eventually be picked up and cleared out by maintenance subroutines, but should remain effective for at least three months.",,
+Le piratage finira par être contourné puis éliminé par les sous-programmes de maintenance, mais devrait rester efficace pendant au moins trois mois.",,
 "cob_resetPrompt","COB_ConfirmPrompt","$cob_action == reset
-!$tag:comm_relay",,"Introducing false readings into the outbound data feed is likely to distract patrols and similar fleets by making them chase what isn't actually there.
+!$tag:comm_relay",,"L'introduction de faux relevés dans le flux de données sortantes est susceptible de distraire les patrouilles et autres flottes en leur faisant chercher ce qui n'est pas réellement ici.
 
-Eventually, the firmware auto-calibration routines will clean out the corruption, but the process will take at least a month.",,
+Les routines d'auto-calibration du micrologiciel finiront par éliminer la corruption, mais le processus prendra au moins un mois.",,
 "cob_hackPrompt2","COB_ConfirmPrompt","$cob_action == hack
 $tag:comm_relay",,"Installing a comm sniffer will give you access to local intel as if you were in this star system.
 
@@ -3149,7 +3149,7 @@ $market.mc:ruins_vast
 FireBest DisableRuinsExploreIfNeeded","$market is covered in vast ruins; cities, factories, mines, farms, homes. The dead are in dread abundance, entwined with salvageable materials, goods, tools, and weapons. This world is a tomb for the hubris of the Domain's project of galactic colonization and hegemony. ","5:salExplore:Explore the ruins",
 "salRuins_alreadyExplored","PopulateOptions","$market.hasRuins
 $market.ruinsExplored
-$market.isPlanetConditionMarketOnly",,"The ruins on the surface of $market have been stripped of anything easily accessible, and further exploitation requires a permanent presence.",,
+$market.isPlanetConditionMarketOnly",,"Les ruines à la surface de $market ont été dépouillées de tout ce qui était facile d'accès, et une exploitation approfondie nécessiterait une présence permanente.",,
 "salRuinsGG_scattered","PopulateOptions","$market.isSurveyed
 $market.isPlanetConditionMarketOnly
 $market.mc:ruins_scattered
@@ -11384,14 +11384,14 @@ Find data core while surveying, get mission to return it to the Galatia Academy"
 !$global.gaIntro2found
 RollProbability 0.3 score:1000","$global.gaIntro2found = true
 $option = gaIntro2_start1 0
-FireBest DialogOptionSelected","Your sensors officer frowns at a blinking indicator. ""Captain, there appears to be a faint signal coming from low orbit.""
+FireBest DialogOptionSelected","Votre officier de reconnaissance fronce les sourcils devant un voyant clignotant. ""Capitaine, il semble y avoir un faible signal provenant de l'orbite basse.""
 
 They pull a detailed scan of the transmission source to the primary bridge display, an orbital nav grid overlaid with icons and telemetry.
 
-""The transmission is very weak. We only picked it up as the survey array ran through its calibration cycle. It looks like an automated instrument package deployed in low orbit. Power source is degraded. It's got to have been here for a while.""","gaIntro2_start2:""And the signal?""","# hop in and interrupt a standard survey interaction, insert stuff about GA etc"
+""The transmission is very weak. We only picked it up as the survey array ran through its calibration cycle. It looks like an automated instrument package deployed in low orbit. Power source is degraded. It's got to have been here for a while.""","gaIntro2_start2:""Et le signal?""","# hop in and interrupt a standard survey interaction, insert stuff about GA etc"
 "gaIntro2surveyOpenAgain","PopulateOptions","$global.gaIntro2found
 $gaIntro2startLater
-!$rejectedRetrieval","FireBest GAIntro2ReminderText",,"gaIntro2_retrieval:Order the data core retrieved",
+!$rejectedRetrieval","FireBest GAIntro2ReminderText",,"gaIntro2_retrieval:Ordonner la récupération du noyau de données",
 "gaIntro2surveyOpenAgainText","GAIntro2ReminderText","!$shownReminderText","$shownReminderText = true 0
 AddText ""Your sensors officer reminds you that you have previously discovered a Galatia Academy instrument package orbiting this planet. A transmission promises a cash reward for its return to the academy.""",,,
 "gaIntro2surveyOpenAgain2","PopulateOptions","$global.gaIntro2found
@@ -11403,19 +11403,19 @@ FireBest OtherPlanetInteractionText
 FireAll PopulateOptions
 FireBest PrintNearbySurveyHostilesTextIfSo
 AddText ""An instrument package orbiting this planet is sending a weak transmission promising a cash reward for its return to the Galatia Academy.""",,"gaIntro2_retrieval2:Order the data core retrieved","# in case you want to immediately change your mind"
-"gaIntro2start2","DialogOptionSelected","$option == gaIntro2_start2","Highlight ""18,000""","Your sensors officer activates the audio output: a garbled loop, wailing in and out of coherence. A recorded voice? 
+"gaIntro2start2","DialogOptionSelected","$option == gaIntro2_start2","Highlight ""18,000""","Votre officier de reconnaissance active la sortie audio : une boucle confuse, gémissant de façon incohérente. Une voix enregistrée ? 
 
-""The transmitter must be damaged. But with a little work,"" a hint of pride enters their voice, ""There.""
+""L'émetteur doit être endommagé. Mais avec un peu de travail,"" un soupçon de fierté entre dans sa voix, ""Voilà.""
 
-""-ment of the Galatia Academy. If found, I implore you to return the data core to the academy for a reward of 18,000 credits authorized by Provost Tomas Kallichore. Message will repeat.""","gaIntro2_retrieval:Order the data core retrieved
-gaIntro2_leaveIt:Leave it be",
+""... de l'Académie de Galatia. Si vous le trouvez, je vous implore de retourner le noyau de données à l'académie pour une récompense de 18,000 crédits versée par le prévôt Tomas Kallichore. Ce message tournera en boucle.""","gaIntro2_retrieval:Ordonner la récupération du noyau de données
+gaIntro2_leaveIt:Ne rien faire",
 "gaIntro2leaveIt","DialogOptionSelected","$option == gaIntro2_leaveIt","$gaIntro2startLater = true
 $rejectedRetrieval = true 0
 FireAll PopulateOptions",,,
 "gaIntro2retrieval2","DialogOptionSelected","$option == gaIntro2_retrieval2","$option = gaIntro2_retrieval 0
 FireBest DialogOptionSelected",,,
-"gaIntro2retrieval","DialogOptionSelected","$option == gaIntro2_retrieval","AddTextSmall ""Acquired Galatia Academy data core"" highlight","Your ops chief oversees a retrieval mission by-the-book, staging approach-and-scan to maximize safety in the event of environmental or technological hazards. The salvor team is used to your chief's attention to detail and within the hour place the instrument package data core in an EM-sealed crate.","gaIntro2_inspect:Inspect the data
-gaIntro2_leaveWithCore:Just take the core",
+"gaIntro2retrieval","DialogOptionSelected","$option == gaIntro2_retrieval","AddTextSmall ""Acquired Galatia Academy data core"" highlight","Votre chef des opérations supervise une mission de récupération dans les règles de l'art, ordonnant un scan et une approche qui maximise la sécurité en cas de risques environnementaux ou technologiques. L'équipe de récupération est habituée à la méticulosité de leur chef et, dans l'heure qui suit, place le noyau de données dans une caisse scellée électromagnétiquement.","gaIntro2_inspect:Analyser les données du noyau
+gaIntro2_leaveWithCore:Se contenter de le récupérer",
 "gaIntro2inspect","DialogOptionSelected","$option == gaIntro2_inspect",,"Cursory inspection by your technology officer - to make sure this isn't some kind of bomb or rogue AI core - reveals a data core packed to its limit with compressed telemetry streams. 
 
 ""It's a... a lot of data,"" they say, scrolling through vast columns of numbers.","gaIntro2_what:""What is it?""
@@ -11434,7 +11434,7 @@ FireAll GAIntro2SebCheck
 FireBest PrintHasSurveyDataTextIfSo
 FireBest OtherPlanetInteractionText
 FireAll PopulateOptions
-FireBest PrintNearbySurveyHostilesTextIfSo","It doesn't matter what's on this data core, corrupted or not, so long as the Galatia Academy pays the credits promised for its return. You order the crate secured in the cargo hold until your $shipOrFleet next finds itself in the Galatia system.",,
+FireBest PrintNearbySurveyHostilesTextIfSo","Peu importe ce qui se trouve sur ce noyau de données, corrompu ou non, tant que l'Académie Galatia paie les crédits promis pour son retour. Vous ordonnez que la caisse soit sécurisée dans la soute jusqu'à ce que votre $shipOrFleet se retrouve dans le système Galatia.",,
 "gaIntro2sebCheck","GAIntro2SebCheck","$player.metSebestyen","Call $global.gaIntro2_ref makeSebestyenImportant",,,
 "# Then: return to the Galatia Academy with the data core!",,,,,,
 "# case 1: have not met Sebestyen",,,,,,

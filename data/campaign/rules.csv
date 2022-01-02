@@ -260,7 +260,7 @@ FireAll PopulateOptions","You leave the bar and take a shuttle back to your $shi
 "marketPostOpenDefault","MarketPostOpen","$hasMarket
 $player.transponderOn
 !$faction.isNeutralFaction","$tradeMode = OPEN 0
-FireBest MarketPostDock","Your $shipOrFleet transmits identification codes via the transponder and you are soon granted docking clearance.",,
+FireBest MarketPostDock","Votre $shipOrFleet transmet ses codes d'identification via le transpondeur et vous obtenez rapidement l'autorisation d'accoster.",,
 "marketPostOpenDefaultNeutral","MarketPostOpen","$hasMarket
 $faction.isNeutralFaction score:100","$tradeMode = OPEN 0
 FireBest MarketPostDock",,,
@@ -2863,8 +2863,8 @@ $tag:comm_relay",,"A soft chime from the comms console indicates the sniffer is 
 "bar_optionSel","DialogOptionSelected","$option == marketVisitBar","FireBest BarShuttleDownPrintDesc
 FireBest BarPrintDesc
 BarCMD showOptions",,,
-"bar_shuttleDescGeneric","BarShuttleDownPrintDesc",,,"You take a shuttle down to the main concourse and quickly find a likely-looking establishment.",,
-"bar_descGeneric","BarPrintDesc",,"ShowImageVisual space_bar","As you enter the bar you are buffeted by the human white-noise of conversation and revelry. Ad-holos buzz softly from ceiling-mounted units, shining garish highlights through glasses and bottles as spacer crews mingle with merchants and locals trading drinks for rumour, jobs, and opportunities.",,
+"bar_shuttleDescGeneric","BarShuttleDownPrintDesc",,,"Vous prenez une navette jusqu'au hall principal et vous trouvez rapidement un établissement qui vous convient.",,
+"bar_descGeneric","BarPrintDesc",,"ShowImageVisual space_bar","En entrant dans le bar, vous êtes assailli par le tumulte des conversations et des réjouissances. Des projecteurs vissés au plafond bourdonnent doucement, faisant briller des reflets criards à travers les verres et les bouteilles, tandis que les équipages de vaisseaux se mêlent aux marchands et aux habitants du coin, échangeant des boissons contre des rumeurs, des emplois et des opportunités.",,
 "bar_descGenericInfamous","BarPrintDesc","$player.atrocities > 1
 RollProbability 0.2","ShowImageVisual space_bar","As you enter the bar you are buffeted by the white-noise of conversation. A spacer at a cheap table looks at you and shock crosses their face. They nudge the merchant on the seat beside, and point. A hush falls over the bar. The ad-holos buzz softly, shining garish highlights through glasses.
 
@@ -12731,13 +12731,13 @@ cutCommLink:Say nothing",
 "hmdfBlurb","hmdf_blurb",,,"""I have an old freighter that's just taking up hangar space. Perhaps you could use it.""",,
 "hmdfBlurbAristo","hmdf_blurb","$voice == aristo",,"""Father has demanded I rid myself of an old freighter I've been meaning to fix up, he says it's taking up valuable space in his orbital hangar. I think he's being tremendously unfair. Perhaps you could take it?""",,
 "hmdfOfferOption","hmdf_option",,,,"hmdf_start:Ask about the old freighter",
-"hmdfBlurbBar","hmdf_blurbBar",,,"At a corner table a spacer in a dirty uniform is quietly drowning $hmdf_hisOrHer sorrows.",,
-"hmdfOfferOptionBar","hmdf_optionBar",,,,"hmdf_startBar:Talk to the hard-drinking spacer",
+"hmdfBlurbBar","hmdf_blurbBar",,,"Au coin d'une table, un voyageur en uniforme sale noie silencieusement son chagrin.",,
+"hmdfOfferOptionBar","hmdf_optionBar",,,,"hmdf_startBar:Parler à la personne qui noie son chagrin",
 "hmdfOfferTextBar","DialogOptionSelected","$option == hmdf_startBar","$missionId = hmdf
-SetTextHighlights $hmdf_price","""I've got a $hmdf_hullClass freighter. I won't... I won't be needing it any more."" $HeOrShe looks at you with reddened eyes that suggest sorrows which require quite a lot of drowning.
+SetTextHighlights $hmdf_price","""Je possède un $hmdf_hullClass freighter. Je... Je n'en aurai plus besoin."" Son regard rougis, submergé par le chagrin.
 
-""I can sell it to you for $hmdf_price credits,"" $heOrShe says, then looks down at $hisOrHer half-empty drink. ""It was good to me, once.""","hmdf_lookBar:Ask for detailed info on the freighter
-contact_declineBarNoContinue:Decline",
+""Je peux vous le vendre pour $hmdf_price crédits,"" dit-elle, puis elle baisse les yeux sur sa boisson à moitié vide. ""C'était le bon temps, autrefois.""","hmdf_lookBar:Demander plus de détails sur le vaisseau
+contact_declineBarNoContinue:Décliner",
 "hmdfOfferTextContactAristo","DialogOptionSelected","$option == hmdf_start
 $voice == aristo","$missionId = hmdf
 SetTextHighlights $hmdf_price","""It's a vintage $hmdf_hullClass freighter, and I was told by the seller that it's seen some real adventures. Terribly exciting, I feel, and it'd have made a fabulous conversation piece once I got it fixed up. There's always something coming up, however.""
@@ -12748,10 +12748,10 @@ contact_decline:Decline",
 SetTextHighlights $hmdf_price","""This $hmdf_hullClass freighter has seen some light-years, but it'll fly. Would be a waste to simply scrap it. I can sell it to you for $hmdf_price credits.""","hmdf_look:Ask for detailed info on the freighter
 contact_decline:Decline",
 "hmdfBarLookAtFreighter","DialogOptionSelected","$option == hmdf_lookBar","Call $hmdf_ref showShip
-DoCanAffordCheck $hmdf_price contact_acceptBar false","The spacer taps a few buttons on a greasy TriPad so you can see the freighter's schematics. 
+DoCanAffordCheck $hmdf_price contact_acceptBar false","L'ancien capitaine appuie sur quelques boutons d'un TriPad graisseux pour que vous puissiez voir les schémas du cargo. 
 
-""Got a few light-years on 'er, for sure. But it'll burn bright and true,"" $heOrShe says wistfully.","contact_acceptBar:Buy the freighter for $hmdf_price credits
-contact_declineBarNoContinue:Decline",
+""Il a quelques années-lumière dans l'bide, c'est sûr. Mais il volera avec éclat et fidélité,"" dit-il avec nostalgie.","contact_acceptBar:Acheter le cargo pour $hmdf_price crédits
+contact_declineBarNoContinue:Décliner",
 "hmdfLookAtFreighterAristo","DialogOptionSelected","$option == hmdf_look
 $voice == aristo","Call $hmdf_ref showShip
 DoCanAffordCheck $hmdf_price contact_accept false","$personName taps a few buttons to pull up the freighter schematics for your examination.
@@ -12942,8 +12942,8 @@ OR
 OR
 ""The pirates have established a base nearby and their raids are simply bad for business. I could extend special bounty terms if you help us contain them.""",,
 "psbOfferOption","psb_option",,,,"psb_start:Ask about the special pirate fleet bounty",
-"psbBlurbBar","psb_blurbBar",,,"A $psb_manOrWoman is motioning to a news feed, haranguing an officer in the local navy patrol uniform about the increased pirate raids.",,
-"psbOfferOptionBar","psb_optionBar",,,,"psb_startBar:Talk to the $psb_manOrWoman haranguing the official about the increased pirate raids",
+"psbBlurbBar","psb_blurbBar",,,"Une personne s'agite devant un fil d'informations, haranguant un officier en uniforme de la marine locale au sujet de l'augmentation des raids de pirates.",,
+"psbOfferOptionBar","psb_optionBar",,,,"psb_startBar:Parler à la personne qui harangue l'officier au sujet de l'augmentation des raids de pirates",
 "psbOfferTextContact","DialogOptionSelected","$option == psb_start","$missionId = psb
 SetTextHighlights $psb_dist $psb_baseBounty $psb_days
 Call $psb_ref showMap ""Target: $psb_systemNameShort""                        ","""The terms are this,"" $heOrShe says, ""A bounty shall be paid for destruction of pirate fleets in or near $psb_systemName, $psb_dist light-years away. The base rate is $psb_baseBounty credits per frigate destroyed or disabled, on an increasing scale for larger hulls - please review addendum A in the terms I've forwarded. The period of the bounty shall last for $psb_days days.""
@@ -13409,16 +13409,16 @@ $PersonName swipes the holo away and pulls up a sector map, ""We've set $bcb_tar
 OR
 ""I need to move some $smug_commodityName to $smug_marketName- without the involvement of the authorities.""",,
 "smugOfferOption","smug_option",,,,"smug_start:Ask about the discreet smuggling operation",
-"smugBlurbBar","smug_blurbBar",,,"At the bar a shady $smug_manOrWoman bothers disinterested starship captains with an off-brand datapad.",,
-"smugOfferOptionBar","smug_optionBar",,,,"smug_startBar:Find out what the shady $smug_manOrWoman with the off-brand datapad is bothering people about",
+"smugBlurbBar","smug_blurbBar",,,"Au bar, un mystérieux étranger équipé d'un datapad bas de gamme dérange des capitaines de vaisseau désintéressés.",,
+"smugOfferOptionBar","smug_optionBar",,,,"smug_startBar:Découvrir ce que raconte le mystérieux étranger qui dérange les gens avec son datapad bas de gamme",
 "smugOfferTextBar","DialogOptionSelected","$option == smug_startBar","$missionId = smug
 SetTextHighlights $smug_quantity $smug_dist $smug_reward
 ShowRemainingCapacity $smug_commodityId
-Call $smug_ref showMap ""Destination: $smug_marketName""","As you approach, the $smug_manOrWoman leaves $hisOrHer current prospect mid-pitch, shifting $hisOrHer attention to you.
+Call $smug_ref showMap ""Destination: $smug_marketName""","Lorsque vous vous approchez, la personne s'arrête en plein milieu de son pitch pour son prospect actuel, reportant son attention sur vous.
 
-""You there, captain. Yes, you know an honest face when you see one!"" $HeOrShe gives a crooked smile, ""Just look here,"" $heOrShe shoves the flickering display of the datapad into your hands: a cargo manifest consisting mostly of low-grade construction materials stored in a warehouse in a completely different system.
+""Vous là, capitaine. Oui, je sais reconnaître un visage honnête quand j'en vois un !"", puis vous souriant de travers, ""Regardez juste ici,"" elle vous fourre le datapad à l'affichage vacillant dans vos mains : un manifeste de cargaison traitant principalement de matériaux de construction low-cost stockés dans l'entrepôt d'un système complètement différent.
 
-$HeOrShe leans in, and speaks quietly, motioning as if explaining the datapad's contents, ""You help me move $smug_quantity units of $smug_commodityName to $smug_marketName, a quick hop of $smug_dist light-years. Then I pay you $smug_reward credits. No need to involve the authorities, no inspections, no tariffs. Easy money, right?""","contact_acceptBar:Accept
+Elle se penche et parle doucement, faisant des gestes comme pour expliquer le contenu du datapad : ""Vous m'aidez à déplacer $smug_quantity unités de $smug_commodityName vers $smug_marketName, un saut rapide de $smug_dist années-lumière. Ensuite, je vous verse $smug_reward crédits. Pas besoin d'impliquer les autorités, pas d'inspection, pas de taxe. De l'argent facile, non ?""","contact_acceptBar:Accept
 contact_declineBarNoContinue:Decline",
 "smugOfferTextContact","DialogOptionSelected","$option == smug_start","$missionId = smug
 SetTextHighlights $smug_quantity $smug_dist $smug_reward

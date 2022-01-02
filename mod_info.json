@@ -7,7 +7,9 @@
   "version": {"major":0, "minor":1, "patch":0},
   "description":"Unofficial French translation - Help us translating this game on GitHub : github.com/grena/starsector_french_translation_mod",
   "gameVersion":"0.95.1a-RC6",
-  "replace":[],
+  "replace":[
+    "data/strings/tips.json"
+  ],
   "jars":[],
   "dependencies":[]
 }

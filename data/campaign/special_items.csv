@@ -1,5 +1,5 @@
 "name","id","tags","tech/manufacturer","rarity","base price","stack size","cargo space","baseRaidDanger","icon","sound id","sound id drop","plugin","plugin params","desc","order"
-"Base ModSpec","modspec","modspec",,,1,1000,1,,"graphics/icons/cargo/modspec2.png","ui_chip_pickup","ui_modspec_drop","com.fs.starfarer.api.campaign.impl.items.ModSpecItemPlugin",,"A collection of notes, guidelines, and practical examples that enable one to adapt and apply this modification to various hulls.",50
+"Base ModSpec","modspec","modspec",,,1,1000,1,,"graphics/icons/cargo/modspec2.png","ui_chip_pickup","ui_modspec_drop","com.fs.starfarer.api.campaign.impl.items.ModSpecItemPlugin",,"Un recueil de notes, de directives et d'exemples pratiques qui permettent d'adapter et d'appliquer cette modification à diverses coques.",50
 ,,,,,,,,,,,,,,,
 "# industry-slotted items",,,,,,,,,,,,,,,
 "Corrupted Nanoforge","corrupted_nanoforge","nanoforge, pather4","Domain Restricted",,50000,1000,1,"HIGH","graphics/icons/cargo/nanoforge_corrupted.png","ui_cargo_special_industrial_pickup","ui_cargo_special_industrial_drop","com.fs.starfarer.api.campaign.impl.items.GenericSpecialItemPlugin","heavyindustry, orbitalworks","A powerful and versatile manufacturing ""black box"", capable of building itself out to an industrial scale, given the necessary raw materials and human assistance.

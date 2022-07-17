@@ -1,140 +1,116 @@
 {
-	"codex":{
-		"damage_kinetic":{
-			"title":"Dégâts cinétiques",
-			"body":"Les dégâts cinétiques sont excellents contre les boucliers, mais faibles contre le blindage.",
+	"codex": {
+		"damage_kinetic": {
+			"title": "Dégâts cinétiques",
+			"body": "Les dégâts cinétiques sont excellents contre les boucliers, mais faibles contre le blindage.",
 		},
-		"damage_highexplosive":{
-			"title":"Dégâts explosifs",
-			"body":"Les dégâts explosifs sont excellents contre le blindage, mais faibles contre les boucliers.",
+		"damage_highexplosive": {
+			"title": "Dégâts explosifs",
+			"body": "Les dégâts explosifs sont excellents contre le blindage, mais faibles contre les boucliers.",
 		},
-		"damage_fragmentation":{
-			"title":"Dégâts par fragmentation",
-			"body":"Les dégâts par fragmentation sont vraiment mauvais à la fois contre les boucliers et contre le blindage. Cependant, les armes qui font des dégâts par fragmentation ont généralement un DPS très élevé, ce qui les rend dévastatrices contre des cibles légèrement blindées, comme les chasseurs et les missiles.\n\nCela peut également être très efficace contre un vaisseau dont le blindage à été endommagé par le combat.",
-		}, 
-		"damage_energy":{
-			"title":"Dégâts énergétique",
-			"body":"Les dégâts énergétique sont aussi efficaces contre les boucliers que le blindage.",
+		"damage_fragmentation": {
+			"title": "Dégâts par fragmentation",
+			"body": "Les dégâts par fragmentation sont vraiment mauvais à la fois contre les boucliers et contre le blindage. Cependant, les armes qui font des dégâts par fragmentation ont généralement un DPS très élevé, ce qui les rend dévastatrices contre des cibles légèrement blindées, comme les chasseurs et les missiles.\n\nCela peut également être très efficace contre un vaisseau dont le blindage à été endommagé par le combat.",
 		},
-		"damage_other":{
-			"title":"Autre type de dégâts",
-			"body":"Cette arme est spéciale. En réalité, si vous voyez cela, c'est probablement un bug.",
-		}, 
-	},
-	"warroom":{
-		#"fleetPoints":{
-		#	"title":"Deployment points",
-		#	"body":"You need available deployment points to deploy your reserves into battle. Retreating or losing ships gives you back the points used to deploy them.",
-		#},
-		#"commandPoints":{
-		#	"title":"Command Points",
-		#	"body":"You need command points to create assignments and give direct orders to your fleet.\n\nOnce you run out, you won't be able to give any more orders, but can still order your fleet to engage the enemy at will by cancelling all existing assignments.\n\nYou gain a few command points every time your forces capture an objective.",
-		#},
-		"pause":{
-			"title":"Pause",
-			"body":"Suspend le jeu.",
+		"damage_energy": {
+			"title": "Dégâts énergétique",
+			"body": "Les dégâts énergétique sont aussi efficaces contre les boucliers que le blindage.",
 		},
-		"play":{
-			"title":"Relancer",
-			"body":"Relance le jeu.",
-		},
-		"combatTime":"Temps écoulé avec les deux flottes en contact l’une avec l’autre.\n\nLe temps de performance maximum des renforts est réduit de la moitié du temps de combat.",
-	},
-	
-	"fleetScreen":{
-		"tooltipCaptain":{
-			"title":"Assigner un capitaine",
-			"body":"Assigne un capitaine (vous-même ou un officier) à ce vaisseau. Le vaisseau bénéficiera des compétences de son capitaine.",
-		},
-		"tooltipBuy":{
-			"title":"Acheter",
-			"body":"Acheter ce %s pour %d crédits.",
-		},
-		"tooltipSell":{
-			"title":"Vendre",
-			"body":"Vendre ce %s pour %d crédits.",
-		},
-		"tooltipTake":{
-			"title":"Prendre",
-			"body":"Prendre ce %s.",
-		},
-		"tooltipGive":{
-			"title":"Stocker",
-			"body":"Transférer ce %s de votre flotte.",
-		},
-		"tooltipMothball":{
-			"title":"Mise en rade",
-			"body":"Un vaisseau mis en rade %ss ne peut pas être utilisé au combat ou réparé, et ne peut servir pour le carburant, le stockage, ou le personnel.",
-		},
-		"tooltipUnmothball":{
-			"title":"Mise en rade",
-			"body":"Un vaisseau mis en rade %ss ne peut pas être utilisé au combat ou réparé, et ne peut servir pour le carburant, le stockage, ou le personnel.\n\nRestaurer le combat readiness après avoir réhabilité le vaisseau utilisera %s supplies pendant %s jour(s).",
-		},
-		"tooltipScuttle":{
-			"title":"Saborder",
-			"body":"Retirer à se %s tout ce qui pourrait être utile, récupérer %d supplies, %d de carburant et %d outillages lourd.",
-		},
-		"tooltipSuspendRepairs":{
-			"title":"Suspendre les réparations & la récupération",
-			"body":"Empêche ce %s d'effectuer des réparations ou de récupérer du combat readiness. Les réparations complètes et la reprise CR consommeront environ %s supplies durant %s jours si elles sont autorisées à continuer.",
-		},
-		"tooltipSuspendRepairsNotNeeded":{
-			"title":"Suspendre les réparations & la récupération",
-			"body":"Empêche ce %s d'effectuer des réparations ou de récupérer du combat readiness. Ce %s n'a pas besoin de réparation ou de récupération de CR.",
-		},
-		"tooltipRefit":{
-			"title":"Rééquiper",
-			"body":"Changez les armes et les hullmods équipés de ce navire.",
-		},
-		"tooltipLogisticalPriority":{
-			"title":"Priorité logistique",
-			"body":"%ss avec une priorité logistique, il obtiendra en priorité l'équipage et les supplies disponibles pour les réparations.",
-		},
-		"tooltipCrewElite":{
-			"title":"Elite",
-			"body":"Assigner à ce %s le meilleur équipage disponible.",
-		},
-		"tooltipCrewVeteran":{
-			"title":"Veteran",
-			"body":"Crew this %s with only veteran crew and below, if possible.", 
-		},
-		"tooltipCrewRegular":{
-			"title":"Regular",
-			"body":"Crew this %s with only regular crew and below, if possible.",
-		},
-		"tooltipCrewGreen":{
-			"title":"Green",
-			"body":"Crew this %s only with green crew, if possible.",
-		},
-		"tooltipCrewBar":{
-			"title":"",
-			"body":"Crew fraction on this %s.",
+		"damage_other": {
+			"title": "Autre type de dégâts",
+			"body": "Cette arme est spéciale. En réalité, si vous voyez cela, c'est probablement un bug.",
 		},
 	},
-	"logistics":{
-		"marines":"Nombre de marines dans votre flotte",
-		"crew":"Nombre de membre d'équipage dans votre flotte, et le nombre requis pour répondre aux exigences minimales de tous les vaisseaux de la flotte.",
-		"supplies":"Les supplies disponibles et l’utilisation de supplies par jour.",
-		"credits":"Crédits disponibles.",
+	"warroom": {
+		"pause": {
+			"title": "Pause",
+			"body": "Suspend le jeu.",
+		},
+		"play": {
+			"title": "Relancer",
+			"body": "Relance le jeu.",
+		},
+		"combatTime": "Temps écoulé avec les deux flottes en contact l’une avec l’autre.\n\nLe temps de performance maximum des renforts est réduit de la moitié du temps de combat.",
 	},
-	"misc":{
-		"jumpPointNormal":"Les points de saut peuvent être utilisés pour transiter entre l'hyperespace et l'espace normal. Certains points de saut conduisent également à d'autres destinations.",
-		"jumpPointStar":"Le puits gravitationnel d'une étoile est assez puissant pour fournir une sortie de l'hyper-espace. Son utilisation est extrêmement difficile et dangereuse.",
-		"jumpPointGasGiant":"Le puits gravitationnel d'une géante gazeuse est assez puissant pour fournir une sortie de l'hyper-espace.",
+	"fleetScreen": {
+		"tooltipCaptain": {
+			"title": "Assigner un capitaine",
+			"body": "Assigne un capitaine (vous-même ou un officier) à ce vaisseau. Le vaisseau bénéficiera des compétences de son capitaine.",
+		},
+		"tooltipBuy": {
+			"title": "Acheter",
+			"body": "Acheter ce %s pour %d crédits.",
+		},
+		"tooltipSell": {
+			"title": "Vendre",
+			"body": "Vendre ce %s pour %d crédits.",
+		},
+		"tooltipTake": {
+			"title": "Prendre",
+			"body": "Prendre ce %s.",
+		},
+		"tooltipGive": {
+			"title": "Stocker",
+			"body": "Transférer ce %s de votre flotte.",
+		},
+		"tooltipMothball": {
+			"title": "Mise en rade",
+			"body": "Un vaisseau mis en rade %ss ne peut pas être utilisé au combat ou réparé, et ne peut servir pour le carburant, le stockage, ou le personnel.",
+		},
+		"tooltipUnmothball": {
+			"title": "Mise en rade",
+			"body": "Un vaisseau mis en rade %ss ne peut pas être utilisé au combat ou réparé, et ne peut servir pour le carburant, le stockage, ou le personnel.\n\nRestaurer le combat readiness après avoir réhabilité le vaisseau utilisera %s supplies pendant %s jour(s).",
+		},
+		"tooltipScuttle": {
+			"title": "Saborder",
+			"body": "Retirer à se %s tout ce qui pourrait être utile, récupérer %d supplies, %d de carburant et %d outillages lourd.",
+		},
+		"tooltipSuspendRepairs": {
+			"title": "Suspendre les réparations & la récupération",
+			"body": "Empêche ce %s d'effectuer des réparations ou de récupérer du combat readiness. Les réparations complètes et la reprise CR consommeront environ %s supplies durant %s jours si elles sont autorisées à continuer.",
+		},
+		"tooltipSuspendRepairsNotNeeded": {
+			"title": "Suspendre les réparations & la récupération",
+			"body": "Empêche ce %s d'effectuer des réparations ou de récupérer du combat readiness. Ce %s n'a pas besoin de réparation ou de récupération de CR.",
+		},
+		"tooltipRefit": {
+			"title": "Rééquiper",
+			"body": "Changez les armes et les hullmods équipés de ce navire.",
+		},
+		"tooltipLogisticalPriority": {
+			"title": "Priorité logistique",
+			"body": "%ss avec une priorité logistique, il obtiendra en priorité l'équipage et les supplies disponibles pour les réparations.",
+		},
+		"tooltipCrewElite": {
+			"title": "Elite",
+			"body": "Assigner à ce %s le meilleur équipage disponible.",
+		},
+		"tooltipCrewVeteran": {
+			"title": "Veteran",
+			"body": "Crew this %s with only veteran crew and below, if possible.",
+		},
+		"tooltipCrewRegular": {
+			"title": "Regular",
+			"body": "Crew this %s with only regular crew and below, if possible.",
+		},
+		"tooltipCrewGreen": {
+			"title": "Green",
+			"body": "Crew this %s only with green crew, if possible.",
+		},
+		"tooltipCrewBar": {
+			"title": "",
+			"body": "Crew fraction on this %s.",
+		},
 	},
-	
+	"logistics": {
+		"marines": "Nombre de marines dans votre flotte",
+		"crew": "Nombre de membre d'équipage dans votre flotte, et le nombre requis pour répondre aux exigences minimales de tous les vaisseaux de la flotte.",
+		"supplies": "Les supplies disponibles et l’utilisation de supplies par jour.",
+		"credits": "Crédits disponibles.",
+	},
+	"misc": {
+		"jumpPointNormal": "Les points de saut peuvent être utilisés pour transiter entre l'hyperespace et l'espace normal. Certains points de saut conduisent également à d'autres destinations.",
+		"jumpPointStar": "Le puits gravitationnel d'une étoile est assez puissant pour fournir une sortie de l'hyper-espace. Son utilisation est extrêmement difficile et dangereuse.",
+		"jumpPointGasGiant": "Le puits gravitationnel d'une géante gazeuse est assez puissant pour fournir une sortie de l'hyper-espace.",
+	},
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

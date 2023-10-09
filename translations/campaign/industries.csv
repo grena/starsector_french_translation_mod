@@ -1,0 +1,58 @@
+"id","name","desc"
+"population","Population & Infrastructure","The basic infrastructure required to support a given population, from rickety orbital hab-modules to megacities and everything between."
+"farming","Farming","Agriculture is a trade and technology as old as civilization itself; for thousands of cycles Humanity has harnessed the power of natural, modified, and artificial biological machines for sustenance. So it has always been, so it shall be so long as humans are human."
+"aquaculture","Aquaculture","Farming on a water world requires a significant initial investment in bioengineering suitable species, but once the process takes off, algae farms and fisheries can be operated by the population without requiring much in the way of specialized training or equipment."
+"mining","Mining","Metal and metalloid ores, organics, and volatile compounds all require heavy equipment, special infrastructure, and a skilled workforce to extract. The harsh work attracts a certain type, and an administration that's not willing to look the other way now and again may find itself running short of willing personnel."
+"techmining","Tech-Mining","Techmining is the motley art of recovering valuable artifacts from Domain ruins. Requires special tools to deal with unique hazards and expert judgement to know where to look for a good haul of baubles. The oldest techminers are a strange lot, clutching luck-charms and refusing to work without their rituals."
+"refining","Refining","Smelting plants here convert ores and transplutonic ores into metals and transplutonics, respectively. Teleoperated robotics are used to handle the most dangerous tasks, usually."
+"spaceport","Spaceport","Facilities for loading and unloading cargo and performing basic starship repairs. A colony without a spaceport is virtually inaccessible to interstellar trade."
+"megaport","Megaport","A vast starport where the stars can touch the dirt. Regimented lander gantries and armoured fuel tanks are laced together by access-roads and short-haul cargo trams feeding a sprawl of warehouse districts and logistics terminals, all making the colony vastly more accessible."
+"lightindustry","Light Industry","Produces domestic and luxury goods. One of the few industries relatively unaffected by the Collapse due to its low-tech nature."
+"heavyindustry","Heavy Industry","Centralized manufacturing infrastructure for production of heavy industrial equipment, supplies, and weapons. Also capable of producing barely-spaceworthy starships; a nanoforge can be installed to improve production quality."
+"orbitalworks","Orbital Works","Centralized manufacturing infrastructure for production of heavy industrial equipment, supplies, and weapons. Also capable of producing barely-spaceworthy starships; a nanoforge can be installed to improve production quality.
+
+Upgraded with an orbital component that further facilitates ship construction, resulting in fewer manufacturing defects."
+"fuelprod","Fuel Production","This facility produces starship fuel, the life-blood of interstellar civilization. Lacking Domain-tech components, fuel production is a laborious and slow process."
+"#advfuelprod","Advanced Fuel Production","A massive Domain-tech facility produces starship fuel, the life-blood of interstellar civilization."
+"commerce","Commerce","Regulations, grants, and infrastructure to encourage thriving independent trade. Greatly reduces the degree of direct control the administration has over the colony."
+"station_base","Orbital Station","A space station that is capable of supporting friendly fleets near $market and must be reduced before invasions or bombardment can be attempted.
+
+Several variations are available, with differences generally being in tactical approaches rather than overall strength."
+"orbitalstation","Orbital Station - Low Tech","A low-tech space station, featuring heavy armor and medium firepower.
+
+Must be reduced before invasions or bombardment can be attempted."
+"battlestation","Battlestation - Low Tech","A space station, augmented with a heavy bastion and point-defense citadels.
+
+Must be reduced before invasions or bombardment can be attempted."
+"starfortress","Star Fortress - Low Tech","An up-armored battlestation, featuring Merlon-class defense drones and an extensive minefield.
+
+Must be reduced before invasions or bombardment can be attempted."
+"orbitalstation_mid","Orbital Station - Midline","A midline space station, featuring heavy firepower on one side and rapid axial rotation.
+
+Must be reduced before invasions or bombardment can be attempted."
+"battlestation_mid","Battlestation - Midline","A space station, augmented with missile support modules.
+
+Must be reduced before invasions or bombardment can be attempted."
+"starfortress_mid","Star Fortress - Midline","An up-armored battlestation, featuring Ravelin-class defense drones and an extensive minefield.
+
+Must be reduced before invasions or bombardment can be attempted."
+"orbitalstation_high","Orbital Station - High Tech","A high-tech space station, featuring heavy rotating shields, a fighter complement, and medium firepower.
+
+Must be reduced before invasions or bombardment can be attempted."
+"battlestation_high","Battlestation - High Tech","A space station, augmented with a defensive citadel featuring heavy firepower.
+
+Must be reduced before invasions or bombardment can be attempted."
+"starfortress_high","Star Fortress - High Tech","An up-armored battlestation, featuring Gargoyle-class defense drones and long-range targeted mine teleporters.
+
+Must be reduced before invasions or bombardment can be attempted."
+"grounddefenses","Ground Defenses","A dispersed, semi-autonomous network of small, hidden weapon installations which makes the prospect of a direct ground assault and even simple raids extremely costly to the attacker. Only overwhelming orbital bombardment or massively disproportionate active screening can suppress these defenses.  "
+"heavybatteries","Heavy Batteries","Armoured subsurface batteries supplement a dispersed network of small, hidden weapon installations. Ground-based batteries are capable of truly awesome firepower, though it only manifests by making ground operations more difficult, as no starship captain would be foolish enough to get within their firing envelopes."
+"patrolhq","Patrol HQ","The requisite hangars, maintenance bays, command/control center, barracks, and logistics operations required to project force throughout a star system. Once established, militarized patrols will hunt pirates and protect friendly convoys."
+"militarybase","Military Base","These facilities enable force projection between star systems. Any such military undertaking is a massive logistical operation requiring coordination of dozens, perhaps hundreds of star ships and thousands of officers, crew, and soldiers."
+"highcommand","High Command","Transtellar empire is possible only through an exceptional corps of officers and bureaucrats given authority over the resources of entire star systems. An established high command allows military operations to be organized and executed across the Sector."
+"lionsguard","Lion's Guard HQ","Headquarters of the feared personal guard of Phillip ""The Lion of Sindria"" Andrada. Boasting superb training and access to the best equipment credits can buy, the fanatical loyalty of the Guard is maintained through a system of perks and incentives that both elevate and isolate the Guard from the Diktat's regular military."
+"planetaryshield","Planetary Shield","An envelope of charged plasma seeded with exotic virtual particles producing effects which disrupt the combat effectiveness of long-range bombardment and even incursion by small vessels. The planetary shield can be continually charged and controlled by a central source and presents a formidable obstacle to any form of ground assault."
+"waystation","Waystation","A supply and maintenance depot for interstellar fleets. Increases a colony's accessibility."
+"cryosanctum","Cryosanctum","An enormous tomb-like vault built to store those who choose to risk cryosleep to pass this time of troubles to wake in what will presumably be a more civilized age. The cryopods themselves are insignificant in size compared to the many-times redundant support infrastructure, massive automated security systems and anti-ship batteries, all housed in a branching subsurface fortress-labyrinth."
+"","",""
+"cryorevival","Cryorevival Facility","The necessary facilities for the mass revival and assimilation of the passengers of a Domain-era cryosleeper. Greatly increases population growth."

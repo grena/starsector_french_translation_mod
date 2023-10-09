@@ -1,0 +1,47 @@
+"id","name","desc"
+"modspec","Base ModSpec","Un recueil de notes, de directives et d'exemples pratiques qui permettent d'adapter et d'appliquer cette modification à diverses coques."
+"","",""
+"corrupted_nanoforge","Corrupted Nanoforge","A powerful and versatile manufacturing ""black box"", capable of building itself out to an industrial scale, given the necessary raw materials and human assistance.
+
+This one has seen better days, and is incapable of reliably producing defect-free components. Nonetheless, having access to a nanoforge at all is a step up as far as starship construction goes."
+"pristine_nanoforge","Pristine Nanoforge","A powerful and versatile manufacturing ""black box"", capable of building itself out to an industrial scale, given the necessary raw materials and human assistance.
+
+This one is good as new, at least according to its on-board diagnostics. In practice, getting defect-free starship components is still a challenge given the overall state of manufacturing in the Sector, but this nanoforge is as good as it gets."
+"synchrotron","Synchrotron Core","A specialized nanoforge, loaded with firmware and seed nano-tech to build itself out into a Synchrotron that allows industrial-scale antimatter production."
+"orbital_fusion_lamp","Orbital Fusion Lamp","A minituarized, variable-output fusion reactor capable of providing ample light and heat to a planet.
+
+Safe operation requires prodigious quantities of volatiles. If the demand is not met, the reactor suffers from potentially hazardous instability, which may lead to an uncontrolled surge in output. Litigation over whether this device is of inherently unsafe design or simply used unsafely were ongoing in Domain courts at the time of the Collapse."
+"coronal_portal","Hypershunt Tap","A minituarized wormhole interface which can be activated to tap into a nearby coronal hypershunt, providing a colony with virtually unlimited power.
+
+Operation requires industrial quantities of transplutonics, which are at first used to open the wormhole, and then - once the power drawn becomes self-sustaining - is consumed in a complicated ablative process which maintains wormhole stability. Any interruption in supply requires a full shutdown of the tap."
+"mantle_bore","Autonomous Mantle Bore","While it is believed there are no functional control override units remaining in the Sector, the bore itself is capable of independent - if sometimes unpredictable - operation. Automatic-mode failsafes preclude its use on habitable worlds."
+"catalytic_core","Catalytic Core","Vastly improves the effectiveness of refining operations by way of a surprising quirk of osmosis physics. Operation requires access to vacuum on a scale difficult to achieve on planets with significant atmospheric pressure."
+"soil_nanites","Soil Nanites","Enables soil enrichment and recovery at a rate far beyond that at which unaided natural processes perform. Domain Nanite Safety Regulation 4324, subsection 81 prohibits use on worlds with transplutonic ore or volatiles deposits, and unfortunately the built-in failsafe appears to be functional."
+"biofactory_embryo","Biofactory Embryo","A dizzying array of consumer goods can be grown rather than manufactured. The fully-extruded biofactory only thrives in the delicate balance of sunlight, soil nutrients, and atmospheric conditions a habitable world can provide. Attempts to mimic these conditions in artificial environments always fail, causing the factory to sicken, presumably due to a genetically encoded failsafe."
+"fullerene_spool","Fullerene Spool","An ultra-strong carbon nanomesh cable that is key to the construction of a space elevator. Greatly improves the efficiency of logistics between the surface of a planet and low orbit."
+"plasma_dynamo","Plasma Dynamo","The superconductor-flanged centerpiece of an industrial system which creates a planetary-scale plasma net that enables efficient, spectacular extraction of volatiles from the atmosphere of a suitable gas giant."
+"cryoarithmetic_engine","Cryoarithmetic Engine","A quantum computer that violates the second law of thermodynamics by getting colder instead of hotter while performing computations.
+
+A massive, planet-wide network of tendrils - ending in heatsinks - extrudes itself, using heat to fuel growth and continued computation. The hotter the planet surface, the more effective the computation engine. The unrivaled processing capacity is a boon to logistical and strategic planning."
+"drone_replicator","Combat Drone Replicator","Mass-produces a number of drone variants, all suited to various tasks related to planetary defense against raids and invasions, as well as local security actions.
+
+Its use was banned by the Domain many cycles prior to the Collapse, so it's surprising to find a working example in the Persean Sector."
+"dealmaker_holosuite","Dealmaker Holosuite","Generates an interactive environment designed to simulate negotiations with prospective business partners. Additionally, the self-adapting microemotion smart sensor systems built into such high-end VR suites  allow real-time tracking of the veracity of expression, providing a technically ethical advantage in business dealings to the facility operator.  
+
+The built-in marketing materials are keen to emphasize that this is not an AI, but merely a sophisticated weighted network in full compliance with the relevant Domain regulations."
+"low_tech_package","Low Tech Blueprint Package","Enables heavy industry to construct the more common ship hulls, weapons, and fighter LPCs from the ""low tech"" school of design."
+"midline_package","Midline Blueprint Package","Enables heavy industry to construct the more common ship hulls, weapons, and fighter LPCs from the ""midline"" school of design."
+"high_tech_package","High Tech Blueprint Package","Enables heavy industry to construct the more common ship hulls, weapons, and fighter LPCs from the ""high tech"" school of design."
+"missile_package","Missile Blueprint Package","Enables heavy industry to construct a range of the more common missile weapons."
+"pirate_package","Pirate Blueprint Package","A collection of hacks, after-market modification specs, and partially successful attempts at corrupted blueprint recovery. Enables heavy industry to construct the low quality but combat-capable hulls more commonly used by pirates and other undesirables."
+"LP_package","Luddic Path Blueprint Package","A collection of hacks and after-market modification specs that enables heavy industry to construct the hulls more commonly used by members of the Luddic Path."
+"LC_package","Luddic Church Blueprint Package","A collection of hacks and after-market modification specs that enables heavy industry to construct hulls bearing Luddic Church markings. Since the modifications are cosmetic in nature, the hulls produced are otherwise pristine."
+"XIV_package","XIV Battlegroup Blueprint Package","A set of blueprints that enable heavy industry to produce the near-legendary hulls employed by the Hegemony-founding XIV Battlegroup. The continued existence - and location - of these blueprints is subject of many rumors."
+"heg_aux_package","Hegemony Auxiliary Blueprint Package","A collection of modified blueprints that bring several civilian craft up to mil-spec or simply add Hegemony markings. Created shortly after the Collapse, some of these blueprints improve hull performance without the increased incidence of d-mods associated with later blueprint hacking efforts."
+"ship_bp","Base Ship Blueprint","Enables heavy industry to construct ship hulls described by this blueprint."
+"weapon_bp","Base Weapon Blueprint","Enables heavy industry to construct ship weapons described by this blueprint."
+"fighter_bp","Base Fighter Blueprint","Enables heavy industry to construct fighter LPCs described by this blueprint."
+"industry_bp","Base Industry Blueprint","Contains the technological specifications needed to construct a planet-side industry or structure."
+"janus","Janus Device","This is the first generation Janus Device created by Elissa Zal based on the theories developed by Scylla Coureuse, among others.
+
+While integrated with a hyperdrive this device allows a hyperwave pulse tuned to the unique resonant signatures of two Gates to be transmitted into a Gate aperture. After a tremendous energy input which requires a great quantity of fuel to generate, a temporary link between those Gates is created. One ship or fleet may then transit the Gate network."

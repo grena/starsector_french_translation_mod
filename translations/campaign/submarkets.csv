@@ -1,0 +1,21 @@
+"id","name","desc"
+"open_market","Marché Ouvert","Le marché ouvert. Seuls les biens légaux peuvent être échangés ici, et les transactions sont soumises à des taxes. Davantage de marchandises sont disponibles lorsque la stabilité est élevée.
+
+La vente d'une quantité suffisante d'une marchandise permet de résoudre temporairement une pénurie."
+"black_market","Marché Noir","Le marché noir. Tout et n'importe quoi peut être acheté ou vendu, sans taxe. Davantage de marchandises sont disponibles lorsque la stabilité est faible.
+
+La vente d'une marchandise ne résoudra pas une pénurie.
+
+Les transactions au marché noir peuvent attirer l'attention des autorités, ce qui entraîne des contrôles de la cargaison et une réduction de la réputation de faction, à moins que les transactions ne soient effectuées avec le transpondeur désactivé.
+
+S'engager dans le commerce légitime comme ""couverture"" réduit également la probabilité d'attirer l'attention des autorités."
+"storage","Stockage","Espace de stockage pour les vaisseaux et la cargaison."
+"generic_military","","Commerce avec la base militaire de $theFaction.
+
+Des armes et autres matériels militaires peuvent être achetés et vendus ici, même s'ils sont illégaux sur le marché ouvert. Une commission et une meilleure réputation avec $theFaction permettent d'obtenir du matériel de meilleure qualité.
+
+Cette base achètera des biens localement illégaux dans le cadre d'un programme de rachat-sans-questions.
+
+La vente d'une quantité suffisante d'une marchandise peut résoudre temporairement une pénurie."
+"local_resources","Resource
+Stockpiles",""

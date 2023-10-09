@@ -141,7 +141,7 @@ def write_new_translations(file_info):
 
         # Écrire les traductions mises à jour dans le fichier local
         with open(local_file, 'w', newline='', encoding='utf-8') as lf:
-            local_csv = csv.DictWriter(lf, fieldnames=updated_data[0].keys(), quotechar='"', quoting=csv.QUOTE_ALL)
+            local_csv = csv.DictWriter(lf, fieldnames=updated_data[0].keys(), quotechar='"', quoting=csv.QUOTE_MINIMAL)
             local_csv.writeheader()
             for data in updated_data:
                 local_csv.writerow(data)

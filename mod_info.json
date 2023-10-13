@@ -1,10 +1,10 @@
 {
   "id":"french_translation",
   "name":"French Translation",
-  "author":"grena",
+  "author":"grena, Céduss",
   "totalConversion":"false",
   "utility":"true",
-  "version": {"major":0, "minor":1, "patch":0},
+  "version": {"major":0, "minor":2, "patch":0},
   "description":"Unofficial French translation - Help us translating this game on GitHub : github.com/grena/starsector_french_translation_mod",
   "gameVersion":"0.96a-RC10",
   "replace":[

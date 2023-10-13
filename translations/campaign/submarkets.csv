@@ -1,21 +1,23 @@
 "id","name","desc"
-"open_market","Marché Ouvert","Le marché ouvert. Seuls les biens légaux peuvent être échangés ici, et les transactions sont soumises à des taxes. Davantage de marchandises sont disponibles lorsque la stabilité est élevée.
+"open_market","Open
+Market","The open market. Only legal goods may be traded here, and transactions are subject to tariffs. More goods are available when stability is high.
 
-La vente d'une quantité suffisante d'une marchandise permet de résoudre temporairement une pénurie."
-"black_market","Marché Noir","Le marché noir. Tout et n'importe quoi peut être acheté ou vendu, sans taxe. Davantage de marchandises sont disponibles lorsque la stabilité est faible.
+Selling enough of a commodity will temporarily resolve a shortage."
+"black_market","Black
+Market","The black market. Anything and everything can be bought or sold, and there are no tariffs. More goods are available when stability is low.
 
-La vente d'une marchandise ne résoudra pas une pénurie.
+Selling a commodity will not resolve a shortage.
 
-Les transactions au marché noir peuvent attirer l'attention des autorités, ce qui entraîne des contrôles de la cargaison et une réduction de la réputation de faction, à moins que les transactions ne soient effectuées avec le transpondeur désactivé.
+Black market transactions may catch the eye of authorities, resulting in cargo scans and reduced faction standing, unless the trades are carried out with the transponder turned off.
 
-S'engager dans le commerce légitime comme ""couverture"" réduit également la probabilité d'attirer l'attention des autorités."
-"storage","Stockage","Espace de stockage pour les vaisseaux et la cargaison."
-"generic_military","","Commerce avec la base militaire de $theFaction.
+Engaging in legitimate trade as a ""cover"" also reduces the probability of attracting the attention of authorities."
+"storage","Storage","Storage space for ships and cargo."
+"generic_military","","Trade with $theFaction military base.
 
-Des armes et autres matériels militaires peuvent être achetés et vendus ici, même s'ils sont illégaux sur le marché ouvert. Une commission et une meilleure réputation avec $theFaction permettent d'obtenir du matériel de meilleure qualité.
+Weapons and other military hardware can be bought and sold here even if they're illegal on the open market. A commission and better standing with $theFaction results in higher-grade hardware being available.
 
-Cette base achètera des biens localement illégaux dans le cadre d'un programme de rachat-sans-questions.
+Will buy locally illegal goods as part of a no-questions-asked buyback program.
 
-La vente d'une quantité suffisante d'une marchandise peut résoudre temporairement une pénurie."
+Selling enough of a commodity will temporarily resolve a shortage."
 "local_resources","Resource
 Stockpiles",""

@@ -1,5 +1,5 @@
 "id","name","desc"
-"modspec","Base ModSpec","Un recueil de notes, de directives et d'exemples pratiques qui permettent d'adapter et d'appliquer cette modification à diverses coques."
+"modspec","Base ModSpec","A collection of notes, guidelines, and practical examples that enable one to adapt and apply this modification to various hulls."
 "","",""
 "corrupted_nanoforge","Corrupted Nanoforge","A powerful and versatile manufacturing ""black box"", capable of building itself out to an industrial scale, given the necessary raw materials and human assistance.
 
@@ -8,10 +8,10 @@ This one has seen better days, and is incapable of reliably producing defect-fre
 
 This one is good as new, at least according to its on-board diagnostics. In practice, getting defect-free starship components is still a challenge given the overall state of manufacturing in the Sector, but this nanoforge is as good as it gets."
 "synchrotron","Synchrotron Core","A specialized nanoforge, loaded with firmware and seed nano-tech to build itself out into a Synchrotron that allows industrial-scale antimatter production."
-"orbital_fusion_lamp","Orbital Fusion Lamp","A minituarized, variable-output fusion reactor capable of providing ample light and heat to a planet.
+"orbital_fusion_lamp","Orbital Fusion Lamp","A miniaturized, variable-output fusion reactor capable of providing ample light and heat to a planet.
 
 Safe operation requires prodigious quantities of volatiles. If the demand is not met, the reactor suffers from potentially hazardous instability, which may lead to an uncontrolled surge in output. Litigation over whether this device is of inherently unsafe design or simply used unsafely were ongoing in Domain courts at the time of the Collapse."
-"coronal_portal","Hypershunt Tap","A minituarized wormhole interface which can be activated to tap into a nearby coronal hypershunt, providing a colony with virtually unlimited power.
+"coronal_portal","Hypershunt Tap","A miniaturized wormhole interface which can be activated to tap into a nearby coronal hypershunt, providing a colony with virtually unlimited power.
 
 Operation requires industrial quantities of transplutonics, which are at first used to open the wormhole, and then - once the power drawn becomes self-sustaining - is consumed in a complicated ablative process which maintains wormhole stability. Any interruption in supply requires a full shutdown of the tap."
 "mantle_bore","Autonomous Mantle Bore","While it is believed there are no functional control override units remaining in the Sector, the bore itself is capable of independent - if sometimes unpredictable - operation. Automatic-mode failsafes preclude its use on habitable worlds."
@@ -26,7 +26,7 @@ A massive, planet-wide network of tendrils - ending in heatsinks - extrudes itse
 "drone_replicator","Combat Drone Replicator","Mass-produces a number of drone variants, all suited to various tasks related to planetary defense against raids and invasions, as well as local security actions.
 
 Its use was banned by the Domain many cycles prior to the Collapse, so it's surprising to find a working example in the Persean Sector."
-"dealmaker_holosuite","Dealmaker Holosuite","Generates an interactive environment designed to simulate negotiations with prospective business partners. Additionally, the self-adapting microemotion smart sensor systems built into such high-end VR suites  allow real-time tracking of the veracity of expression, providing a technically ethical advantage in business dealings to the facility operator.  
+"dealmaker_holosuite","Dealmaker Holosuite","Generates an interactive environment designed to stimulate negotiations with prospective business partners. Additionally, the self-adapting microemotion smart sensor systems built into such high-end VR suites  allow real-time tracking of the veracity of expression, providing a technically ethical advantage in business dealings to the facility operator.  
 
 The built-in marketing materials are keen to emphasize that this is not an AI, but merely a sophisticated weighted network in full compliance with the relevant Domain regulations."
 "low_tech_package","Low Tech Blueprint Package","Enables heavy industry to construct the more common ship hulls, weapons, and fighter LPCs from the ""low tech"" school of design."

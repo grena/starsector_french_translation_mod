@@ -68,15 +68,15 @@
 		},
 		"tooltipUnmothball":{
 			"title":"Mise en rade",
-			"body":"Un vaisseau mis en rade %ss ne peut pas être utilisé au combat ou réparé, et ne peut servir pour le carburant, le stockage, ou le personnel.\n\nRestaurer le combat readiness après avoir réhabilité le vaisseau utilisera %s supplies pendant %s jour(s).",
+			"body":"Un vaisseau mis en rade %ss ne peut pas être utilisé au combat ou réparé, et ne peut servir pour le carburant, le stockage, ou le personnel.\n\nRestaurer le combat readiness après avoir réhabilité le vaisseau utilisera %s fournitures pendant %s jour(s).",
 		},
 		"tooltipScuttle":{
 			"title":"Saborder",
-			"body":"Retirer à se %s tout ce qui pourrait être utile, récupérer %d supplies, %d de carburant et %d outillages lourd.",
+			"body":"Retirer à se %s tout ce qui pourrait être utile, récupérer %d fournitures, %d de carburant et %d outillages lourd.",
 		},
 		"tooltipSuspendRepairs":{
 			"title":"Suspendre les réparations & la récupération",
-			"body":"Empêche ce %s d'effectuer des réparations ou de récupérer du combat readiness. Les réparations complètes et la reprise CR consommeront environ %s supplies durant %s jours si elles sont autorisées à continuer.",
+			"body":"Empêche ce %s d'effectuer des réparations ou de récupérer du combat readiness. Les réparations complètes et la reprise CR consommeront environ %s fournitures durant %s jours si elles sont autorisées à continuer.",
 		},
 		"tooltipSuspendRepairsNotNeeded":{
 			"title":"Suspendre les réparations & la récupération",
@@ -88,7 +88,7 @@
 		},
 		"tooltipLogisticalPriority":{
 			"title":"Priorité logistique",
-			"body":"%ss avec une priorité logistique, il obtiendra en priorité l'équipage et les supplies disponibles pour les réparations.",
+			"body":"%ss avec une priorité logistique, il obtiendra en priorité l'équipage et les fournitures disponibles pour les réparations.",
 		},
 		"tooltipCrewElite":{
 			"title":"Elite",
@@ -96,15 +96,15 @@
 		},
 		"tooltipCrewVeteran":{
 			"title":"Veteran",
-			"body":"Crew this %s with only veteran crew and below, if possible.", 
+			"body":"L'équipage de ce %s n'est composé que de vétérans et de membres d'équipage de niveau inférieur, dans la mesure du possible.", 
 		},
 		"tooltipCrewRegular":{
 			"title":"Regular",
-			"body":"Crew this %s with only regular crew and below, if possible.",
+			"body":"L'équipage de ce %s n'est composé que de membres de l'équipage normal et de membres de l'équipage inférieur, si possible.",
 		},
 		"tooltipCrewGreen":{
 			"title":"Green",
-			"body":"Crew this %s only with green crew, if possible.",
+			"body":"L'équipage de ce %s ne doit être composé que d'un équipage vert, si possible.",
 		},
 		"tooltipCrewBar":{
 			"title":"",
@@ -114,7 +114,7 @@
 	"logistics":{
 		"marines":"Nombre de marines dans votre flotte",
 		"crew":"Nombre de membre d'équipage dans votre flotte, et le nombre requis pour répondre aux exigences minimales de tous les vaisseaux de la flotte.",
-		"supplies":"Les supplies disponibles et l’utilisation de supplies par jour.",
+		"supplies":"Les fournitures disponibles et l’utilisation de fournitures par jour.",
 		"credits":"Crédits disponibles.",
 	},
 	"misc":{
@@ -124,17 +124,3 @@
 	},
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
